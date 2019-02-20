@@ -11,7 +11,7 @@
 <!-- 	<link rel="stylesheet" href="css/style.css">
  -->	<style>
 		*{text-decoration: none; margin: 0; padding: 0; max-width: 100%;}
-		html,body{margin: 0; padding: 0; font-family: 'Roboto', sans-serif; color: #415066;}
+		html,body{margin: 0; padding: 0; font-family: 'Roboto', sans-serif; color: #415066; font-size: 16px;}
 		img{border: none;}
 		li{list-style-type: none;}
 		div{display: block; margin: 0; padding: 0;}
@@ -20,8 +20,9 @@
 		i{font-style: italic;}
 		b{font-weight: bold;}
 		a:link, a:visited, a:active{text-decoration: none; color: inherit;}
-		.Fright{float: right;}
-		.Fleft{float: left;}
+		input:focus, select:focus, textarea:focus, button:focus{outline: none;}
+		.Fright, .constantFright{float: right;}
+		.Fleft, .constantFleft{float: left;}
 		.clear{clear: both;}
 		.flex-container{display: flex;}
 		.mid-align{}
@@ -36,11 +37,36 @@
 		.hidden{display: none;}
 		.padmobile{padding: 0 15px;}
 		.white{color: #fff;}
-
+		.font20{font-size: 20px;}
+		.martop20{margin-top: 20px;}
+		.marright5{margin-right: 5px;}
+		.marleft5{margin-left: 5px;}
+		.marbot30{margin-bottom: 30px;}
+		.padtop5{padding-top: 5px;}
+		
 		header{padding: 10px; box-shadow: inset 0 -1px 0 0 #2A4494;}
 		header img{max-width: 130px;}
-		#hero-image{background: url("images/AquaTru_Cart_hero.jpg") no-repeat; background-size: 100%; width: 100%; height: 70vh;}
+		#hero-image{background: url("images/AquaTru_Cart_hero.jpg") no-repeat center; background-size: cover; width: 100%; height: 65vh;
+					margin-bottom: 7%;}
 		#hero-image h1{color: #2A4494; font-size: 40px; position: absolute; top: 30vh;}
+
+		h2{color: #2A4494; font-size: 34px; margin-bottom: 30px; font-weight: normal;}
+		.column{flex: 1;}
+		.bigColumn{flex: 1.5; margin-right: 30px;}
+		.column47{width: 47%;}
+		.column65{width: 65%;}
+		.column30{width: 30%;}
+		.form-wrapper-grey{border: 1px solid #415066; padding: 40px 20px;}
+		h3{color: #465469; font-size: 28px; font-weight: normal; margin-bottom: 20px;}
+		input{background: #fff; font-size: 20px; padding: 15px 10px; border-radius: 5px; border: 1px solid #415066; width: 90%;
+			  margin: 15px 0 30px;}
+		input:active{outline: none;}
+		.width48{width: 48%;}
+		.width78{width: 78%;}
+		.width50{width: 50%;}
+		.width95{width: 95%;}
+		.blue-checkbox{width: 28px; height: 28px; color: #fff; font-weight: bold; font-size: 28px; background: #2A4494;
+					   float: left; margin-right: 10px; border-radius: 5px; padding: 0px 1px 4px 2px;}
 	</style>
 		<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -57,15 +83,105 @@
 				</div>
 			</div>
 		</div>
-		<div class="container">
-			
-		</div>
+		<div class="row">
+			<div class="container">
+				<h2>Your Order Details</h2>
+				<div class="flex-container">
+					<div class="bigColumn">
+						<div class="form-wrapper-grey">
+							<h3>Billing Details</h3>
+								<div class="column47 Fleft">
+									<p class="font20">First Name <sup>*</sup></p>
+									<input type="text">
+								</div>
+								<div class="column47 Fright">
+									<p class="font20">Last Name <sup>*</sup></p>
+									<input type="text">
+								</div>
+							<div class="clear"></div>
+							<p class="font20">Email Address <sup>*</sup></p>
+							<input type="text" class="width95">
+							<div class="blue-checkbox">
+								<span>&#x2713;</span>
+							</div>
+							<p>Yes, sign me up to receive news about sales &amp; offers! Read our privacy policy.</p>
+							<div class="clear"></div>
+							<p class="font20 martop20">Phone Number <sup>*</sup></p>
+							<input type="text" class="width95">
+							<p class="font20">Street Address <sup>*</sup></p>
+							<input type="text" class="width95">
+							<p class="font20">Address (Apt/Suite)</p>
+							<input type="text" class="width95">
+							<div class="Fleft width50">
+								<p class="font20">City <sup>*</sup></p>
+								<input type="text">
+							</div>
+							<div class="Fright width48 flex-container">
+								<div class="marright5">
+									<p class="font20">State <sup>*</sup></p>
+									<input type="text" class="width78">
+								</div>
+								<div class="marleft5">
+									<p class="font20">Zip Code <sup>*</sup></p>
+									<input type="text" class="width78">
+								</div>
+							</div>
+							<div class="clear"></div>
+							<h3 class="martop20">Billing Details</h3>
+							<div class="blue-checkbox">
+								<span>&#x2713;</span>
+							</div>
+							<p class="font20 padtop5">Same as Billing</p>
+							<div class="clear marbot30"></div>
+								<div class="column47 Fleft">
+									<p class="font20">First Name <sup>*</sup></p>
+									<input type="text">
+								</div>
+								<div class="column47 Fright">
+									<p class="font20">Last Name <sup>*</sup></p>
+									<input type="text">
+								</div>
+							<div class="clear"></div>
+							<p class="font20">Email Address <sup>*</sup></p>
+							<input type="text" class="width95">
+							<p class="font20">Phone Number <sup>*</sup></p>
+							<input type="text" class="width95">
+							<p class="font20">Street Address <sup>*</sup></p>
+							<input type="text" class="width95">
+							<p class="font20">Address (Apt/Suite)</p>
+							<input type="text" class="width95">
+							<div class="Fleft width50">
+								<p class="font20">City <sup>*</sup></p>
+								<input type="text">
+							</div>
+							<div class="Fright width48 flex-container">
+								<div class="marright5">
+									<p class="font20">State <sup>*</sup></p>
+									<input type="text" class="width78">
+								</div>
+								<div class="marleft5">
+									<p class="font20">Zip Code <sup>*</sup></p>
+									<input type="text" class="width78">
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div><!-- form-wrapper --> 
+					</div><!-- bigColumn --> 
+					<div class="column">
+						<div class="form-wrapper-grey">
+							<h3>Order Summary</h3>
+	
+							
+						</div><!-- form-wrapper --> 
+					</div><!-- small column --> 
+				</div><!-- flex-container -->
+			</div><!-- container -->
+		</div><!-- row -->
 		<footer>
 			<div class="container">
 				
 			</div>
 		</footer>
-		<script src="../jquery.min.js"></script>
-		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	</body>
 	</html>
