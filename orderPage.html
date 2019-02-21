@@ -41,8 +41,11 @@
 		.martop20{margin-top: 20px;}
 		.marright5{margin-right: 5px;}
 		.marleft5{margin-left: 5px;}
+		.marbot20{margin-bottom: 20px;}
 		.marbot30{margin-bottom: 30px;}
+		.marg025{margin: 0 25px;}
 		.padtop5{padding-top: 5px;}
+		hr{border: 0; border-top: 1px solid #2A4494;}
 		
 		header{padding: 10px; box-shadow: inset 0 -1px 0 0 #2A4494;}
 		header img{max-width: 130px;}
@@ -64,9 +67,18 @@
 		.width48{width: 48%;}
 		.width78{width: 78%;}
 		.width50{width: 50%;}
+		.width84{width: 84%;}
 		.width95{width: 95%;}
 		.blue-checkbox{width: 28px; height: 28px; color: #fff; font-weight: bold; font-size: 28px; background: #2A4494;
 					   float: left; margin-right: 10px; border-radius: 5px; padding: 0px 1px 4px 2px;}
+		.use{font-size: 28px; color: #2A4494;}
+		.specialHR{position: absolute; width: 38%; top: 17px;}
+		.leftHR{left: 0}
+		.rightHR{right: 0}
+		.outerCircle{width: 41px; height: 41px; display: inline-block; margin-right: 20px; border: 1px solid #2A4494; vertical-align: 12px;
+					 border-radius: 50%; cursor: pointer;}
+		.innerCircle{width: 31px; height: 31px; border-radius: 50%; background: #2A4494; margin: 5px auto 0;}
+		.price{float: right; color: #181F6F; font-size: 16px;}
 	</style>
 		<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -89,7 +101,7 @@
 				<div class="flex-container">
 					<div class="bigColumn">
 						<div class="form-wrapper-grey">
-							<h3>Billing Details</h3>
+							<h3 class="marbot20">Billing Details</h3>
 								<div class="column47 Fleft">
 									<p class="font20">First Name <sup>*</sup></p>
 									<input type="text">
@@ -165,13 +177,44 @@
 								</div>
 							</div>
 							<div class="clear"></div>
+							<h3 class="martop20">Payment Information</h3>
+							<p class="font20 martop20">Credit Card Number</p>
+							<input type="text" class="width95">
+							<div class="flex-container">
+								<div class="column">
+									<p class="font20">Ex. Date (month)</p>
+									<input type="text" class="width84">
+								</div>
+								<div class="column marg025">
+									<p class="font20">Ex. Date (year)</p>
+									<input type="text" class="width84">
+								</div>
+								<div class="column">
+									<p class="font20">Security Code</p>
+									<input type="text" class="width84">
+								</div>
+							</div>
+							<div class="relative center marbot30">
+								<hr class="specialHR leftHR"> <p class="use">OR USE</p> <hr class="specialHR rightHR">
+							</div>
+						<div class="outerCircle"><div class="innerCircle"></div></div><img src="images/paypal.png" alt="Paypal button">
 						</div><!-- form-wrapper --> 
 					</div><!-- bigColumn --> 
 					<div class="column">
 						<div class="form-wrapper-grey">
-							<h3>Order Summary</h3>
-	
-							
+							<h3 class="marbot30">Order Summary</h3>
+							<hr>
+							<div class="summary-section">
+								<img src="images/AQTpackage.jpg" alt="" class="summary-image"> 
+								<div class="quantity">
+									<p class="productName">AquaTru &reg;</p>
+									<div class="quantityBox">
+										<p>Qty: 1</p>
+									</div>
+								</div>
+							</div>
+							<p class="price">$449.00</p>
+							<div class="clear"></div>
 						</div><!-- form-wrapper --> 
 					</div><!-- small column --> 
 				</div><!-- flex-container -->
