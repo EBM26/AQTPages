@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+	<meta name="format-detection" content="telephone=no">
+	<link rel="icon" type="image/x-icon" href="images/aqt_icon.png" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+	<title>AquaTru | Home Page</title>
+<!-- 	<link rel="stylesheet" href="css/style.css">
+ -->	<style>
+ 		/* general styling rules */
+		*{text-decoration: none; margin: 0; padding: 0; max-width: 100%;}
+		html,body{margin: 0; padding: 0; font-family: 'Roboto', sans-serif; color: #415066; font-size: 16px;}
+		img{border: none;}
+		li{list-style-type: none;}
+		div{display: block; margin: 0; padding: 0;}
+		u{text-decoration: underline;}
+		s{text-decoration: line-through;}
+		i, .italic{font-style: italic;}
+		b, .bold{font-weight: bold;}
+		a:link, a:visited, a:active{text-decoration: none; color: inherit;}
+		input:focus, select:focus, textarea:focus, button:focus{outline: none;}
+		.Fright, .constantFright{float: right;}
+		.Fleft, .constantFleft{float: left;}
+		.clear{clear: both;}
+		.flex-container{display: flex;}
+		.container{width: 1100px; margin: auto;}
+		.row{padding: 0 40px;}
+		.align-left{text-align: left;}
+		.inline{display: inline;}
+		.inline-block{display: inline-block;}
+		.uppercase{text-transform: uppercase;}
+		.center{text-align: center;}
+		.relative{position: relative;}
+		.hidden{display: none;}
+		.padmobile{padding: 0 15px;}
+		.white{color: #fff;}
+		.font12{font-size: 12px;}
+		.font14{font-size: 14px;}
+		.font20{font-size: 20px;}
+		.font18{font-size: 18px;}
+		.martop10{margin-top: 10px !important;}
+		.martop20{margin-top: 20px;}
+		.martop100{margin-top: 100px;}
+		.marright5{margin-right: 5px;}
+		.marleft5{margin-left: 5px;}
+		.marbot20{margin-bottom: 20px;}
+		.marbot25{margin-bottom: 25px;}
+		.marbot30{margin-bottom: 30px;}
+		.marg015{margin: 0 15px;}
+		.marg025{margin: 0 25px;}
+		.marg30{margin: 30px 0;}
+		.marg20{margin: 20px 0;}
+		.marg40{margin: 40px auto;}
+		.padtop5{padding-top: 5px;}
+		.padtop30{padding-top: 30px !important;}
+		.siteBlue{color: #2A4494 !important;}
+		.siteGrey{color: #848D9C;}
+		hr{border: 0; border-top: 1px solid #2A4494;}
+		.text-left{text-align: left !important;}
+		
+		/* homePage styling */
+
+
+		/* mobile styling rules */
+		@media only screen and (max-width: 1060px) {
+			html,body{font-size: 14px;}
+			.container{width: auto;}
+			.row{padding: 0 15px;}
+			.flex-container{display: block;}
+			.Fright, .Fleft{float: none;}
+			.mobileHide{display: none;}
+		}
+	</style>
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<header>
+			<a href="homePage.html">
+				<img src="images/logo.png" alt="">
+			</a>
+		</header>
+		<div id="hero-image">
+			<div class="row">
+				<div class="container relative">
+						<h1>Buy Aquatru</h1>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="container">
+
+			</div><!-- container -->
+		</div><!-- row -->
+		<footer>
+			<div class="container">
+				<img src="images/logo-footer.png" alt="">
+				<div class="marg40">
+						<a href="https://www.facebook.com/aquatruwater/"><img src="images/icon_facebook.png" alt=""></a>
+						<a href="https://twitter.com/AquaTru"><img src="images/icon_twitter.png" alt="" class="marg015"></a>
+						<a href="https://www.youtube.com/channel/UCKcdZfrPnMcmBcsyJ_gtZtA"><img src="images/icon_youtube.png" alt=""></a>
+				</div>
+				<p>&copy;Copyright 2019 AquaTru, LLC - All Rights Reserved. </p>
+				<p class="martop10"><a href="/privacy/">Privacy Policy</a> | <a href="/terms-and-conditions/">Terms and Conditions</a> | <a href="/customer-service/">Customer Service</a> | <a target="_blank" href="/affiliate/">Affiliate Program</a> | <a href="/faqs/">FAQ</a>  | <a href="http://blog.aquatruwater.com/">Blog</a></p>
+				<p class="martop10"><a href="http://www.aquatruwater.nl/">Germany Distributor</a> |  <a href="http://www.aquatruwater.nl/">Belgium Distributor</a> |  <a href="http://www.aquatruwater.nl/">Turkey Distributor</a> |  <a href="http://www.aquatruwater.nl/">France Distributor</a> | <a href="http://www.aquatruhk.com/">Hong Kong Distributor</a> | <a href="http://www.aquatruwater.nl/">Netherlands Distributor</a> | <br><a href="https://www.shoptv.com.ph/aqua-tru-counter-top-reverse-osmosis-water-purifier.html">Philippines Distributor</a> | <a href="mailto:help@waterboxme.com" class="footer_links">Oman, United Arab Emirates and Lebanon Distributor</a>  | <a href="https://www.rightspinhealth.co.nz/">Australia and New Zealand</a></p>
+			</div>
+		</footer>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$("#shippingBox").click(function() {
+
+					function ShipSame() {
+						$("#shippingBox").css("background", "#fff");
+						$("#shipping-wrapper").slideDown();
+					};
+
+					function ShipDiff() {
+						$("#shippingBox").css("background", "#2A4494");
+						$("#shipping-wrapper").slideUp();
+					};
+
+					return (this.tog = !this.tog) ? ShipSame() : ShipDiff();
+				});
+			});
+		</script>
+	</body>
+	</html>
