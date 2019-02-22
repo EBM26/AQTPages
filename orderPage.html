@@ -18,14 +18,13 @@
 		u{text-decoration: underline;}
 		s{text-decoration: line-through;}
 		i{font-style: italic;}
-		b{font-weight: bold;}
+		b, .bold{font-weight: bold;}
 		a:link, a:visited, a:active{text-decoration: none; color: inherit;}
 		input:focus, select:focus, textarea:focus, button:focus{outline: none;}
 		.Fright, .constantFright{float: right;}
 		.Fleft, .constantFleft{float: left;}
 		.clear{clear: both;}
 		.flex-container{display: flex;}
-		.mid-align{}
 		.container{width: 1100px; margin: auto;}
 		.row{padding: 0 40px;}
 		.align-left{text-align: left;}
@@ -37,15 +36,26 @@
 		.hidden{display: none;}
 		.padmobile{padding: 0 15px;}
 		.white{color: #fff;}
+		.font12{font-size: 12px;}
+		.font14{font-size: 14px;}
 		.font20{font-size: 20px;}
+		.font18{font-size: 18px;}
+		.martop10{margin-top: 10px !important;}
 		.martop20{margin-top: 20px;}
+		.martop100{margin-top: 100px;}
 		.marright5{margin-right: 5px;}
 		.marleft5{margin-left: 5px;}
 		.marbot20{margin-bottom: 20px;}
 		.marbot30{margin-bottom: 30px;}
 		.marg025{margin: 0 25px;}
+		.marg30{margin: 30px 0;}
+		.marg20{margin: 20px 0;}
 		.padtop5{padding-top: 5px;}
+		.padtop30{padding-top: 30px !important;}
+		.siteBlue{color: #2A4494 !important;}
+		.siteGrey{color: #848D9C;}
 		hr{border: 0; border-top: 1px solid #2A4494;}
+		.text-left{text-align: left !important;}
 		
 		header{padding: 10px; box-shadow: inset 0 -1px 0 0 #2A4494;}
 		header img{max-width: 130px;}
@@ -78,7 +88,29 @@
 		.outerCircle{width: 41px; height: 41px; display: inline-block; margin-right: 20px; border: 1px solid #2A4494; vertical-align: 12px;
 					 border-radius: 50%; cursor: pointer;}
 		.innerCircle{width: 31px; height: 31px; border-radius: 50%; background: #2A4494; margin: 5px auto 0;}
-		.price{float: right; color: #181F6F; font-size: 16px;}
+		.price{float: right; color: #2A4494; font-size: 16px; padding-top: 55px;}
+		.summary-image{width: 140px; height: 94px; display: inline-block; margin-top: 10px;}
+		.quantity{color: #2A4494; text-align: center; display: inline-block; margin-left: 15px; vertical-align: 30px;}
+		.quantityBox{width: 82px; height: 36px; border: 1px solid #2A4494; border-radius: 5px; box-sizing: border-box; padding-top: 8px; 
+					 color: #415066; margin: 10px auto 0; cursor: pointer;}
+		.fullHr{margin: 35px 0; max-width: none; width: 111.5%; margin-left: -21px;}
+		#apply{display: inline-block; text-align: center; padding: 16px; background: #2A4494; color: #fff; font-size: 19px;
+				letter-spacing: 1px; border-bottom-right-radius: 5px; border-top-right-radius: 5px; vertical-align: 1px; cursor: pointer;}
+		#applyInput{width: 70%; border-bottom-right-radius: 0; border-top-right-radius: 0; margin-top: 10px;}
+		.total{font-size: 22px; font-weight: bold; margin: 30px 0 40px;}
+		.CTA{font-size: 18px; text-align: center; margin: 5px auto 10px; border-radius: 5px; background: #2A4494; 
+			 color: #fff; padding: 18px 0; letter-spacing: 1px; font-weight: bold; cursor: pointer;}
+		.CTA:hover{opacity: .8;}
+		.norton-div{font-size: 16px; float: right; color: #505E72; width: 50%;}
+		.nortonIMg{max-width: 180px;}
+		.additionalColumn{flex: 1; padding: 40px 20px 20px; border: 1px solid #2A4494; text-align: center; line-height: 1.4;}
+		.productTitle{color: #2A4494; font-weight: bold; font-size: 28px; margin: 30px auto 15px;}
+		.bottomCTA{width: 72%; float: right;}
+		.bottomQuantityBox{width: 100px; height: 60px; font-size: 18px; padding-top: 18px; float: left; margin-top: 6px;}
+		.bottomQuantityBox img{width: 20px; margin-left: 3px;}
+		.leftBottomColumn{border-right: 0; border-bottom: 0;}
+		.rightBottomColumn{border-bottom: 0;}
+		.lastColumn{border-right: 0;}
 	</style>
 		<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -212,11 +244,158 @@
 										<p>Qty: 1</p>
 									</div>
 								</div>
-							</div>
-							<p class="price">$449.00</p>
+								<p class="price">$449.00</p>
+								<div class="clear"></div>
+							</div>	
+							<hr class="fullHr">
+							<p class="font20">Discount Code</p>
+							<input type="text" id="applyInput"><div id="apply">Apply</div>		
+							<hr>
+							<div class="marg30">
+								<p class="font20"><span>Subtotal</span> <span class="constantFright">$449.00</span></p>
+								<div class="clear marbot20"></div>
+								<p class="font20"><span>Shipping &amp; Handling</span> <span class="constantFright">$19.95</span></p>
+								<div class="clear"></div>
+							</div>	
+							<hr>		
+							<p class="total">Total <span class="constantFright">$468.95<sup>*</sup></span></p>
 							<div class="clear"></div>
+							<p class="font12"><sup>*</sup>Applicable sales tax may apply, including Canadian residents.</p>
+							<div class="CTA">SUBMIT ORDER</div>
+							<p class="siteGrey font14">By pressing this button you agree to the <a href="" class="siteBlue">terms and conditions</a> of this sale.</p>
 						</div><!-- form-wrapper --> 
+						<div class="marg30">
+							<img src="images/norton.png" alt="" class="nortonIMg">
+							<div class="norton-div">
+								<p><b>Security Is Our Top Priority</b>. The information provided on this page is not added to our database.</p>
+							</div>
+							<div class="clear"></div>
+						</div>
 					</div><!-- small column --> 
+				</div><!-- flex-container -->
+				<h2 class="martop100">You might also like</h2>
+				<div class="flex-container">
+					<div class="additionalColumn leftBottomColumn">
+						<img src="images/additioanlTanks.jpg" alt="" style="max-width: 360px;">
+						<p class="productTitle">Additional Purified Water Tank</p>
+						<p class="font20">$50 + $6.95 S&amp;P</p>
+						<p class="marg20 text-left">Get additional purified water tanks so you can have them handy around the house or office -- keep one on AquaTru and a second one in the fridge.</p>
+						<div class="quantityBox bottomQuantityBox">
+							<p>Qty: 1 <img src="images/blackDown.png" alt=""></p>
+						</div>
+						<div class="CTA bottomCTA">ADD TO CART</div>
+						<div class="clear"></div>
+					</div>
+					<div class="additionalColumn padtop30 rightBottomColumn">
+						<p class="font18 siteBlue bold marbot30">For Aquatru Models purchased before April 6th 2018 (4/6/2018) with the Models # AT3000 or AT2000</p>
+						<img src="images/SPECIAL_Filters.jpg" alt="" style="max-width: 139px;">
+						<p class="productTitle martop10">AquaTru Replacement Filters Special Value Pack</p>
+						<p class="font20">$79.95, plus $9.95 S&P (Free pre-filter, save $20)</p>
+						<p class="marg20 text-left">AquaTru Special Value Pack (1200 gallon replacement): 1 pre-filter, 1 carbon filter and 1 RO filter.</p>
+						<div class="quantityBox bottomQuantityBox">
+							<p>Qty: 1 <img src="images/blackDown.png" alt=""></p>
+						</div>
+						<div class="CTA bottomCTA">ADD TO CART</div>
+						<div class="clear"></div>
+					</div>
+				</div><!-- flex-container -->
+				<div class="flex-container">
+					<div class="additionalColumn leftBottomColumn">
+						<img src="images/alkaline_mineral_water2.jpg" alt="" style="max-height: 170px;">
+						<p class="productTitle">AquaTru "Perfect Minerals"</p>
+						<p class="font20">Add AquaTru "Perfect Minerals" to the order for $15 FREE S&amp;P</p>
+						<p class="marg20 text-left">To turn AquaTru water into naturally alkaline mineral water, simply add 5-6 drops of AquaTru Perfect Minerals per 8 oz. glass of purified water. A 2 oz. bottle of Perfect Minerals creates 60 gallons of great-tasting alkaline mineral water.</p>
+						<div class="quantityBox bottomQuantityBox">
+							<p>Qty: 1 <img src="images/blackDown.png" alt=""></p>
+						</div>
+						<div class="CTA bottomCTA">ADD TO CART</div>
+						<div class="clear"></div>
+					</div>
+					<div class="additionalColumn padtop30 rightBottomColumn">
+						<p class="font18 siteBlue bold marbot30">For Aquatru model AT2010 purchased after April 6th 2018 (4/6/2018)</p>
+						<img src="images/SPECIAL_Filters.jpg" alt="" style="max-width: 139px;">
+						<p class="productTitle martop10">AquaTru Replacement Filters One-Year Combo Pack</p>
+						<p class="font20">$59.95 (Save $10.00), plus $9.95 S&amp;P</p>
+						<p class="marg20 text-left" style="margin-bottom: 43px;">A one-year combo pack - Includes 2 pre-filters and a carbon filter. That's a $70.00 value.</p>
+						<div class="quantityBox bottomQuantityBox">
+							<p>Qty: 1 <img src="images/blackDown.png" alt=""></p>
+						</div>
+						<div class="CTA bottomCTA">ADD TO CART</div>
+						<div class="clear"></div>
+					</div>
+				</div><!-- flex-container -->
+				<div class="flex-container">			
+					<div class="additionalColumn padtop30 leftBottomColumn">
+						<p class="font18 siteBlue bold marbot30">For Aquatru model AT2010 purchased after April 6th 2018 (4/6/2018)</p>
+						<img src="images/SPECIAL_Filters.jpg" alt="" style="max-width: 139px;">
+						<p class="productTitle martop10">AquaTru Replacement Filters Two-Year Combo Pack</p>
+						<p class="font20">$149.95 (Save $40), plus $9.95 S&amp;P</p>
+						<p class="marg20 text-left" style="margin-bottom: 43px;">A two-year combo pack - Includes 4 pre-filters, 2 carbon filters and an RO filter. That's a $190.00 value.</p>
+						<div class="quantityBox bottomQuantityBox">
+							<p>Qty: 1 <img src="images/blackDown.png" alt=""></p>
+						</div>
+						<div class="CTA bottomCTA">ADD TO CART</div>
+						<div class="clear"></div>
+					</div>
+					<div class="additionalColumn rightBottomColumn">
+						<img src="images/PRECARBON_filter.jpg" alt="" style="max-height: 170px; margin-top: 20px;">
+						<p class="productTitle">AquaTru Pre/Carbon Filter</p>
+						<p class="font20">$19.95 plus $4.95 S&amp;P</p>
+						<p class="marg20 text-left" style="margin-bottom: 30px;">The dual function pre-filter (Filter #1+2) will last six months.<br><br>Operating Parameter<br>Temperature: Min 4°C. (39°F); Max 38° (100°F)</p>
+						<div class="quantityBox bottomQuantityBox">
+							<p>Qty: 1 <img src="images/blackDown.png" alt=""></p>
+						</div>
+						<div class="CTA bottomCTA">ADD TO CART</div>
+						<div class="clear"></div>
+					</div>
+				</div><!-- flex-container -->
+				<div class="flex-container">			
+					<div class="additionalColumn leftBottomColumn">
+						<img src="images/ReverseOsmosis_filter.jpg" alt="" style="max-height: 170px; margin-top: 20px;">
+						<p class="productTitle">AquaTru Reverse Osmosis Filter</p>
+						<p class="font20">$49.95 plus $4.95 S&amp;P</p>
+						<p class="marg20 text-left" style="margin-bottom: 30px;">The Reverse Osmosis filter (Filter #3) will last two years or 1200 gallons, whichever comes first.<br><br>Operating Parameter<br>Temperature: Min 4°C. (39°F); Max 38° (100°F)</p>
+						<div class="quantityBox bottomQuantityBox">
+							<p>Qty: 1 <img src="images/blackDown.png" alt=""></p>
+						</div>
+						<div class="CTA bottomCTA">ADD TO CART</div>
+						<div class="clear"></div>
+					</div>
+					<div class="additionalColumn rightBottomColumn">
+						<img src="images/PRECARBON_filter.jpg" alt="" style="max-height: 170px; margin-top: 20px;">
+						<p class="productTitle">AquaTru VOC Carbon Filter</p>
+						<p class="font20">$29.95 plus $4.95 S&amp;P</p>
+						<p class="marg20 text-left" style="margin-bottom: 30px;">The carbon VOC filter (Filter #4) will last one year or 600 gallons, whichever comes first.<br><br>Operating Parameter<br>Temperature: Min 4°C. (39°F); Max 38° (100°F)</p>
+						<div class="quantityBox bottomQuantityBox">
+							<p>Qty: 1 <img src="images/blackDown.png" alt=""></p>
+						</div>
+						<div class="CTA bottomCTA">ADD TO CART</div>
+						<div class="clear"></div>
+					</div>
+				</div><!-- flex-container -->
+				<div class="flex-container">			
+					<div class="additionalColumn lastColumn">
+						<img src="images/ACAdapter.jpg" alt="" style="max-height: 170px; margin-top: 20px;">
+						<p class="productTitle">AquaTru AC Adapter</p>
+						<p class="font20">$19.95 plus $4.95 S&amp;P</p>
+						<p class="marg20 text-left" style="margin-bottom: 30px;">AquaTru 24V Power Adapter. Many customers have found having an extra adapter power cord on hand comes in handy or in the case they may have misplaced the one that shipped with the AquaTru unit. Also, if you have many small electrics at home, this charger is universal and compatible with most AC/DC products.</p>
+						<div class="quantityBox bottomQuantityBox">
+							<p>Qty: 1 <img src="images/blackDown.png" alt=""></p>
+						</div>
+						<div class="CTA bottomCTA">ADD TO CART</div>
+						<div class="clear"></div>
+					</div>
+					<div class="additionalColumn">
+						<img src="images/AquaTru_WARRANTY.jpg" alt="" style="max-height: 170px; margin-top: 20px;">
+						<p class="productTitle">AquaTru 3-Year Extended Warranty</p>
+						<p class="font20">Only $49.95</p>
+						<p class="marg20 text-left" style="margin-bottom: 51px;">Every AquaTru is protected with our one-year warranty from the original purchase date. Protect your investment and health by extending your coverage to three years from the original AquaTru purchase date with our 3-Year Extended Warranty*.</p>
+						<div class="quantityBox bottomQuantityBox">
+							<p>Qty: 1 <img src="images/blackDown.png" alt=""></p>
+						</div>
+						<div class="CTA bottomCTA">ADD TO CART</div>
+						<div class="clear"></div>
+					</div>
 				</div><!-- flex-container -->
 			</div><!-- container -->
 		</div><!-- row -->
