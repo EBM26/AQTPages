@@ -47,9 +47,11 @@
 		.marleft5{margin-left: 5px;}
 		.marbot20{margin-bottom: 20px;}
 		.marbot30{margin-bottom: 30px;}
+		.marg015{margin: 0 15px;}
 		.marg025{margin: 0 25px;}
 		.marg30{margin: 30px 0;}
 		.marg20{margin: 20px 0;}
+		.marg40{margin: 40px auto;}
 		.padtop5{padding-top: 5px;}
 		.padtop30{padding-top: 30px !important;}
 		.siteBlue{color: #2A4494 !important;}
@@ -111,6 +113,29 @@
 		.leftBottomColumn{border-right: 0; border-bottom: 0;}
 		.rightBottomColumn{border-bottom: 0;}
 		.lastColumn{border-right: 0;}
+
+		footer{background: url("images/waves.png") no-repeat; background-size: cover; padding: 160px 0 60px; text-align: center; 
+			   margin-top: 60px; font-size: 14px; color: #fff;}
+
+		@media only screen and (max-width: 1060px) {
+			html,body{font-size: 14px;}
+			header{box-shadow: none;}
+			header img{max-width: 100px}
+			#hero-image{height: 34vh; background-position: right;}
+			#hero-image h1{display: none;}
+			h2{font-size: 28px;}
+			.container{width: auto;}
+			.row{padding: 0 15px;}
+			.flex-container{display: block;}
+			.Fright, .Fleft{float: none;}
+			.mobileHide{display: none;}
+			.bigColumn, .marright5{margin: 0;}
+			.form-wrapper-grey{padding: 20px 15px;}
+			.column47, .width50, .width48{width: 100%;}
+			.font20{font-size: 18px;}
+			input{margin: 10px 0 15px;}
+			.width95, .width78{width: 90%;}
+		}
 	</style>
 		<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -171,7 +196,7 @@
 								</div>
 							</div>
 							<div class="clear"></div>
-							<h3 class="martop20">Billing Details</h3>
+							<h3 class="martop20">Shipping Details</h3>
 							<div class="blue-checkbox">
 								<span>&#x2713;</span>
 							</div>
@@ -299,7 +324,7 @@
 						<div class="clear"></div>
 					</div>
 				</div><!-- flex-container -->
-				<div class="flex-container">
+				<div class="flex-container mobileHide">
 					<div class="additionalColumn leftBottomColumn">
 						<img src="images/alkaline_mineral_water2.jpg" alt="" style="max-height: 170px;">
 						<p class="productTitle">AquaTru "Perfect Minerals"</p>
@@ -324,7 +349,7 @@
 						<div class="clear"></div>
 					</div>
 				</div><!-- flex-container -->
-				<div class="flex-container">			
+				<div class="flex-container mobileHide">			
 					<div class="additionalColumn padtop30 leftBottomColumn">
 						<p class="font18 siteBlue bold marbot30">For Aquatru model AT2010 purchased after April 6th 2018 (4/6/2018)</p>
 						<img src="images/SPECIAL_Filters.jpg" alt="" style="max-width: 139px;">
@@ -349,7 +374,7 @@
 						<div class="clear"></div>
 					</div>
 				</div><!-- flex-container -->
-				<div class="flex-container">			
+				<div class="flex-container mobileHide">			
 					<div class="additionalColumn leftBottomColumn">
 						<img src="images/ReverseOsmosis_filter.jpg" alt="" style="max-height: 170px; margin-top: 20px;">
 						<p class="productTitle">AquaTru Reverse Osmosis Filter</p>
@@ -373,7 +398,7 @@
 						<div class="clear"></div>
 					</div>
 				</div><!-- flex-container -->
-				<div class="flex-container">			
+				<div class="flex-container mobileHide">			
 					<div class="additionalColumn lastColumn">
 						<img src="images/ACAdapter.jpg" alt="" style="max-height: 170px; margin-top: 20px;">
 						<p class="productTitle">AquaTru AC Adapter</p>
@@ -401,7 +426,15 @@
 		</div><!-- row -->
 		<footer>
 			<div class="container">
-				
+				<img src="images/logo-footer.png" alt="">
+				<div class="marg40">
+						<a href="https://www.facebook.com/aquatruwater/"><img src="images/icon_facebook.png" alt=""></a>
+						<a href="https://twitter.com/AquaTru"><img src="images/icon_twitter.png" alt="" class="marg015"></a>
+						<a href="https://www.youtube.com/channel/UCKcdZfrPnMcmBcsyJ_gtZtA"><img src="images/icon_youtube.png" alt=""></a>
+				</div>
+				<p>&copy;Copyright 2019 AquaTru, LLC - All Rights Reserved. </p>
+				<p class="martop10"><a href="/privacy/">Privacy Policy</a> | <a href="/terms-and-conditions/">Terms and Conditions</a> | <a href="/customer-service/">Customer Service</a> | <a target="_blank" href="/affiliate/">Affiliate Program</a> | <a href="/faqs/">FAQ</a>  | <a href="http://blog.aquatruwater.com/">Blog</a></p>
+				<p class="martop10"><a href="http://www.aquatruwater.nl/">Germany Distributor</a> |  <a href="http://www.aquatruwater.nl/">Belgium Distributor</a> |  <a href="http://www.aquatruwater.nl/">Turkey Distributor</a> |  <a href="http://www.aquatruwater.nl/">France Distributor</a> | <a href="http://www.aquatruhk.com/">Hong Kong Distributor</a> | <a href="http://www.aquatruwater.nl/">Netherlands Distributor</a> | <br><a href="https://www.shoptv.com.ph/aqua-tru-counter-top-reverse-osmosis-water-purifier.html">Philippines Distributor</a> | <a href="mailto:help@waterboxme.com" class="footer_links">Oman, United Arab Emirates and Lebanon Distributor</a>  | <a href="https://www.rightspinhealth.co.nz/">Australia and New Zealand</a></p>
 			</div>
 		</footer>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
