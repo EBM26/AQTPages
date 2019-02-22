@@ -17,7 +17,7 @@
 		div{display: block; margin: 0; padding: 0;}
 		u{text-decoration: underline;}
 		s{text-decoration: line-through;}
-		i{font-style: italic;}
+		i, .italic{font-style: italic;}
 		b, .bold{font-weight: bold;}
 		a:link, a:visited, a:active{text-decoration: none; color: inherit;}
 		input:focus, select:focus, textarea:focus, button:focus{outline: none;}
@@ -46,6 +46,7 @@
 		.marright5{margin-right: 5px;}
 		.marleft5{margin-left: 5px;}
 		.marbot20{margin-bottom: 20px;}
+		.marbot25{margin-bottom: 25px;}
 		.marbot30{margin-bottom: 30px;}
 		.marg015{margin: 0 15px;}
 		.marg025{margin: 0 25px;}
@@ -67,7 +68,8 @@
 
 		h2{color: #2A4494; font-size: 34px; margin-bottom: 30px; font-weight: normal;}
 		.column{flex: 1;}
-		.bigColumn{flex: 1.5; margin-right: 30px;}
+		.bigColumn{flex: 1.5; margin-right: 30px; order: 1;}
+		.smallColumn{order: 2;}
 		.column47{width: 47%;}
 		.column65{width: 65%;}
 		.column30{width: 30%;}
@@ -82,9 +84,10 @@
 		.width84{width: 84%;}
 		.width95{width: 95%;}
 		.blue-checkbox{width: 28px; height: 28px; color: #fff; font-weight: bold; font-size: 28px; background: #2A4494;
-					   float: left; margin-right: 10px; border-radius: 5px; padding: 0px 1px 4px 2px;}
-		.use{font-size: 28px; color: #2A4494;}
-		.specialHR{position: absolute; width: 38%; top: 17px;}
+					   float: left; margin-right: 10px; border-radius: 5px; padding: 0px 1px 4px 2px;
+					   border: 1px solid  #2A4494;}
+		.use{font-size: 24px; color: #2A4494;}
+		.specialHR{position: absolute; width: 29%; top: 15px;}
 		.leftHR{left: 0}
 		.rightHR{right: 0}
 		.outerCircle{width: 41px; height: 41px; display: inline-block; margin-right: 20px; border: 1px solid #2A4494; vertical-align: 12px;
@@ -95,7 +98,7 @@
 		.quantity{color: #2A4494; text-align: center; display: inline-block; margin-left: 15px; vertical-align: 30px;}
 		.quantityBox{width: 82px; height: 36px; border: 1px solid #2A4494; border-radius: 5px; box-sizing: border-box; padding-top: 8px; 
 					 color: #415066; margin: 10px auto 0; cursor: pointer;}
-		.fullHr{margin: 35px 0; max-width: none; width: 111.5%; margin-left: -21px;}
+		.fullHr{margin: 35px 0;}
 		#apply{display: inline-block; text-align: center; padding: 16px; background: #2A4494; color: #fff; font-size: 19px;
 				letter-spacing: 1px; border-bottom-right-radius: 5px; border-top-right-radius: 5px; vertical-align: 1px; cursor: pointer;}
 		#applyInput{width: 70%; border-bottom-right-radius: 0; border-top-right-radius: 0; margin-top: 10px;}
@@ -114,6 +117,7 @@
 		.rightBottomColumn{border-bottom: 0;}
 		.lastColumn{border-right: 0;}
 		.tankPhoto{max-width: 360px;}
+		#shipping-wrapper{display: none;}
 
 		footer{background: url("images/waves.png") no-repeat; background-size: cover; padding: 160px 0 60px; text-align: center; 
 			   margin-top: 60px; font-size: 14px; color: #fff;}
@@ -125,6 +129,7 @@
 			#hero-image{height: 34vh; background-position: right;}
 			#hero-image h1{display: none;}
 			h2{font-size: 28px;}
+			h3{font-size: 24px;}
 			.container{width: auto;}
 			.row{padding: 0 15px;}
 			.flex-container{display: block;}
@@ -142,6 +147,20 @@
 			.nortonIMg{max-width: 130px;}
 			.norton-div{font-size: 14px;}
 			.martop100{margin-top: 50px;}
+			.flex-mobile{display: flex;}
+			.mobile50{width: 50%;}
+			.mobile78{width: 78%;}
+			.summary-image{display: block; margin: auto;}
+			.price{padding-top: 30px; font-size: 18px;}
+			#applyInput{width: 58%;}
+			.outerCircle{height: 31px; width: 31px;}
+			.innerCircle{height: 21px; width: 21px;}
+			.payPalButton{max-width: 200px;}
+			.mobileCenter{text-align: center;}
+			.bottomQuantityBox{width: 85px; height: 50px; font-size: 16px; padding-top: 14px;}
+			.bottomCTA{width: 60%; font-size: 16px; padding: 14px 0;}
+			footer{padding: 90px 30px 30px;font-size: 12px;}
+			.footerLogo{width: 150px;}
 		}
 	</style>
 		<!--[if lt IE 9]>
@@ -163,108 +182,7 @@
 			<div class="container">
 				<h2>Your Order Details</h2>
 				<div class="flex-container">
-					<div class="bigColumn">
-						<div class="form-wrapper-grey">
-							<h3 class="marbot20">Billing Details</h3>
-								<div class="column47 Fleft">
-									<p class="font20">First Name <sup>*</sup></p>
-									<input type="text">
-								</div>
-								<div class="column47 Fright">
-									<p class="font20">Last Name <sup>*</sup></p>
-									<input type="text">
-								</div>
-							<div class="clear"></div>
-							<p class="font20">Email Address <sup>*</sup></p>
-							<input type="text" class="width95">
-							<div class="blue-checkbox">
-								<span>&#x2713;</span>
-							</div>
-							<p>Yes, sign me up to receive news about sales &amp; offers! Read our privacy policy.</p>
-							<div class="clear"></div>
-							<p class="font20 martop20">Phone Number <sup>*</sup></p>
-							<input type="text" class="width95">
-							<p class="font20">Street Address <sup>*</sup></p>
-							<input type="text" class="width95">
-							<p class="font20">Address (Apt/Suite)</p>
-							<input type="text" class="width95">
-							<div class="Fleft width50">
-								<p class="font20">City <sup>*</sup></p>
-								<input type="text">
-							</div>
-							<div class="Fright width48 flex-container">
-								<div class="marright5">
-									<p class="font20">State <sup>*</sup></p>
-									<input type="text" class="width78">
-								</div>
-								<div class="marleft5">
-									<p class="font20">Zip Code <sup>*</sup></p>
-									<input type="text" class="width78">
-								</div>
-							</div>
-							<div class="clear"></div>
-							<h3 class="martop20">Shipping Details</h3>
-							<div class="blue-checkbox">
-								<span>&#x2713;</span>
-							</div>
-							<p class="font20 padtop5">Same as Billing</p>
-							<div class="clear marbot30"></div>
-								<div class="column47 Fleft">
-									<p class="font20">First Name <sup>*</sup></p>
-									<input type="text">
-								</div>
-								<div class="column47 Fright">
-									<p class="font20">Last Name <sup>*</sup></p>
-									<input type="text">
-								</div>
-							<div class="clear"></div>
-							<p class="font20">Email Address <sup>*</sup></p>
-							<input type="text" class="width95">
-							<p class="font20">Phone Number <sup>*</sup></p>
-							<input type="text" class="width95">
-							<p class="font20">Street Address <sup>*</sup></p>
-							<input type="text" class="width95">
-							<p class="font20">Address (Apt/Suite)</p>
-							<input type="text" class="width95">
-							<div class="Fleft width50">
-								<p class="font20">City <sup>*</sup></p>
-								<input type="text">
-							</div>
-							<div class="Fright width48 flex-container">
-								<div class="marright5">
-									<p class="font20">State <sup>*</sup></p>
-									<input type="text" class="width78">
-								</div>
-								<div class="marleft5">
-									<p class="font20">Zip Code <sup>*</sup></p>
-									<input type="text" class="width78">
-								</div>
-							</div>
-							<div class="clear"></div>
-							<h3 class="martop20">Payment Information</h3>
-							<p class="font20 martop20">Credit Card Number</p>
-							<input type="text" class="width95">
-							<div class="flex-container">
-								<div class="column">
-									<p class="font20">Ex. Date (month)</p>
-									<input type="text" class="width84">
-								</div>
-								<div class="column marg025">
-									<p class="font20">Ex. Date (year)</p>
-									<input type="text" class="width84">
-								</div>
-								<div class="column">
-									<p class="font20">Security Code</p>
-									<input type="text" class="width84">
-								</div>
-							</div>
-							<div class="relative center marbot30">
-								<hr class="specialHR leftHR"> <p class="use">OR USE</p> <hr class="specialHR rightHR">
-							</div>
-						<div class="outerCircle"><div class="innerCircle"></div></div><img src="images/paypal.png" alt="Paypal button">
-						</div><!-- form-wrapper --> 
-					</div><!-- bigColumn --> 
-					<div class="column">
+					<div class="column smallColumn">
 						<div class="form-wrapper-grey">
 							<h3 class="marbot30">Order Summary</h3>
 							<hr>
@@ -304,6 +222,111 @@
 							<div class="clear"></div>
 						</div>
 					</div><!-- small column --> 
+					<div class="bigColumn">
+						<div class="form-wrapper-grey">
+							<h3 class="marbot20">Billing Details</h3>
+								<div class="column47 Fleft">
+									<p class="font20">First Name <sup>*</sup></p>
+									<input type="text">
+								</div>
+								<div class="column47 Fright">
+									<p class="font20">Last Name <sup>*</sup></p>
+									<input type="text">
+								</div>
+							<div class="clear"></div>
+							<p class="font20">Email Address <sup>*</sup></p>
+							<input type="text" class="width95"><br>
+							<div class="blue-checkbox">
+								<span>&#x2713;</span>
+							</div>
+							<p>Yes, sign me up to receive news about sales &amp; offers! Read our privacy policy.</p>
+							<div class="clear"></div>
+							<p class="font20 martop20">Phone Number <sup>*</sup></p>
+							<input type="text" class="width95">
+							<p class="font20">Street Address <sup>*</sup></p>
+							<input type="text" class="width95">
+							<p class="font20">Address (Apt/Suite)</p>
+							<input type="text" class="width95">
+							<div class="Fleft width50">
+								<p class="font20">City <sup>*</sup></p>
+								<input type="text">
+							</div>
+							<div class="Fright width48 flex-container flex-mobile">
+								<div class="marright5">
+									<p class="font20">State <sup>*</sup></p>
+									<input type="text" class="width78 mobile50">
+								</div>
+								<div class="marleft5">
+									<p class="font20">Zip Code <sup>*</sup></p>
+									<input type="text" class="width78 mobile78">
+								</div>
+							</div>
+							<div class="clear"></div>
+							<h3 class="martop20">Shipping Details</h3>
+							<div class="blue-checkbox" id="shippingBox">
+								<span>&#x2713;</span>
+							</div>
+							<p class="font20 padtop5">Same as Billing</p>
+							<div class="clear marbot30"></div>
+							<div id="shipping-wrapper">
+								<div class="column47 Fleft">
+									<p class="font20">First Name <sup>*</sup></p>
+									<input type="text">
+								</div>
+								<div class="column47 Fright">
+									<p class="font20">Last Name <sup>*</sup></p>
+									<input type="text">
+								</div>
+							<div class="clear"></div>
+							<p class="font20">Email Address <sup>*</sup></p>
+							<input type="text" class="width95">
+							<p class="font20">Phone Number <sup>*</sup></p>
+							<input type="text" class="width95">
+							<p class="font20">Street Address <sup>*</sup></p>
+							<input type="text" class="width95">
+							<p class="font20">Address (Apt/Suite)</p>
+							<input type="text" class="width95">
+							<div class="Fleft width50">
+								<p class="font20">City <sup>*</sup></p>
+								<input type="text">
+							</div>
+							<div class="Fright width48 flex-container flex-mobile">
+								<div class="marright5">
+									<p class="font20">State <sup>*</sup></p>
+									<input type="text" class="width78 mobile50">
+								</div>
+								<div class="marleft5">
+									<p class="font20">Zip Code <sup>*</sup></p>
+									<input type="text" class="width78 mobile78">
+								</div>
+							</div>
+							<div class="clear"></div>
+							</div>
+							<h3 class="martop20">Payment Information</h3>
+							<p class="font20 martop20">Credit Card Number</p>
+							<input type="text" class="width95">
+							<div class="flex-container flex-mobile">
+								<div class="column">
+									<p class="font20">Ex. Date (month)</p>
+									<input type="text" class="width84">
+								</div>
+								<div class="column marg025">
+									<p class="font20">Ex. Date (year)</p>
+									<input type="text" class="width84">
+								</div>
+								<div class="column">
+									<p class="font20">Security Code</p>
+									<input type="text" class="width84">
+								</div>
+							</div>
+							<div class="relative center marbot30">
+								<hr class="specialHR leftHR"> <p class="use">OR USE</p> <hr class="specialHR rightHR">
+							</div>
+						<div class="mobileCenter">
+							<div class="outerCircle"><div class="innerCircle"></div></div><img src="images/paypal.png" alt="Paypal button" class="payPalButton">
+						</div>
+						</div><!-- form-wrapper --> 
+					</div><!-- bigColumn --> 
 				</div><!-- flex-container -->
 				<h2 class="martop100">You might also like</h2>
 				<div class="flex-container">
@@ -311,7 +334,8 @@
 						<img src="images/additioanlTanks.jpg" alt="" class="tankPhoto">
 						<p class="productTitle">Additional Purified Water Tank</p>
 						<p class="font20">$50 + $6.95 S&amp;P</p>
-						<p class="marg20 text-left">Get additional purified water tanks so you can have them handy around the house or office -- keep one on AquaTru and a second one in the fridge.</p>
+						<p class="marg20 text-left">Get additional purified water tanks so you can have them handy around the house or office -- keep one on AquaTru and a second one in the fridge.<br>
+							<b>Features:</b> Shatterproof and break resistant, Crystal clearergonomic design with integrated handle, Spill-resistant pour spout, and BPA Free</p>
 						<div class="quantityBox bottomQuantityBox">
 							<p>Qty: 1 <img src="images/blackDown.png" alt=""></p>
 						</div>
@@ -323,7 +347,7 @@
 						<img src="images/SPECIAL_Filters.jpg" alt="" style="max-width: 139px;">
 						<p class="productTitle martop10">AquaTru Replacement Filters Special Value Pack</p>
 						<p class="font20">$79.95, plus $9.95 S&P (Free pre-filter, save $20)</p>
-						<p class="marg20 text-left">AquaTru Special Value Pack (1200 gallon replacement): 1 pre-filter, 1 carbon filter and 1 RO filter.</p>
+						<p class="marg20 text-left" style="margin-bottom: 72px;">AquaTru Special Value Pack (1200 gallon replacement): 1 pre-filter, 1 carbon filter and 1 RO filter.</p>
 						<div class="quantityBox bottomQuantityBox">
 							<p>Qty: 1 <img src="images/blackDown.png" alt=""></p>
 						</div>
@@ -344,7 +368,7 @@
 						<div class="clear"></div>
 					</div>
 					<div class="additionalColumn padtop30 rightBottomColumn">
-						<p class="font18 siteBlue bold marbot30">For Aquatru model AT2010 purchased after April 6th 2018 (4/6/2018)</p>
+						<p class="font18 siteBlue bold marbot25">For Aquatru model AT2010 purchased after April 6th 2018 (4/6/2018)</p>
 						<img src="images/SPECIAL_Filters.jpg" alt="" style="max-width: 139px;">
 						<p class="productTitle martop10">AquaTru Replacement Filters One-Year Combo Pack</p>
 						<p class="font20">$59.95 (Save $10.00), plus $9.95 S&amp;P</p>
@@ -423,10 +447,11 @@
 						<p class="font20">Only $49.95</p>
 						<p class="marg20 text-left" style="margin-bottom: 51px;">Every AquaTru is protected with our one-year warranty from the original purchase date. Protect your investment and health by extending your coverage to three years from the original AquaTru purchase date with our 3-Year Extended Warranty*.</p>
 						<div class="quantityBox bottomQuantityBox">
-							<p>Qty: 1 <img src="images/blackDown.png" alt=""></p>
+							<p>Qty: 1 <img src="images/blackDown.png" alt="" class="footerLogo"></p>
 						</div>
 						<div class="CTA bottomCTA">ADD TO CART</div>
 						<div class="clear"></div>
+						<p class="font12 italic text-left marg20">*This warranty does not cover damage caused by accident, misuse or any use other than as intended and described in this product manual, or damage resulting from failure to maintain and clean this product as specified in this product manual. This warranty applies only to the original purchaser of the AquaTru product.</p>
 					</div>
 				</div><!-- flex-container -->
 			</div><!-- container -->
@@ -445,5 +470,23 @@
 			</div>
 		</footer>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$("#shippingBox").click(function() {
+
+					function ShipSame() {
+						$("#shippingBox").css("background", "#fff");
+						$("#shipping-wrapper").slideDown();
+					};
+
+					function ShipDiff() {
+						$("#shippingBox").css("background", "#2A4494");
+						$("#shipping-wrapper").slideUp();
+					};
+
+					return (this.tog = !this.tog) ? ShipSame() : ShipDiff();
+				});
+			});
+		</script>
 	</body>
 	</html>
