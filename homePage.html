@@ -26,6 +26,7 @@
 		.Fleft, .constantFleft{float: left;}
 		.clear{clear: both;}
 		.flex-container{display: flex;}
+		.flex1{flex: 1;}
 		.container{width: 1100px; margin: auto;}
 		.row{padding: 0 40px;}
 		.align-left{text-align: left;}
@@ -40,29 +41,84 @@
 		.font12{font-size: 12px;}
 		.font14{font-size: 14px;}
 		.font20{font-size: 20px;}
+		.font22{font-size: 22px;}
 		.font18{font-size: 18px;}
+		.font26{font-size: 26px;}
+		.font28{font-size: 28px;}
+		.font36{font-size: 36px;}
 		.martop10{margin-top: 10px !important;}
 		.martop20{margin-top: 20px;}
 		.martop100{margin-top: 100px;}
 		.marright5{margin-right: 5px;}
 		.marleft5{margin-left: 5px;}
+		.marbot5{margin-bottom: 5px;}
+		.marbot10{margin-bottom: 10px;}
 		.marbot20{margin-bottom: 20px;}
+		.marbot15{margin-bottom: 15px;}
 		.marbot25{margin-bottom: 25px;}
 		.marbot30{margin-bottom: 30px;}
+		.marbot80{margin-bottom: 80px;}
 		.marg015{margin: 0 15px;}
 		.marg025{margin: 0 25px;}
+		.marg04Per{margin: 0 4%;}
 		.marg30{margin: 30px 0;}
 		.marg20{margin: 20px 0;}
 		.marg40{margin: 40px auto;}
 		.padtop5{padding-top: 5px;}
 		.padtop30{padding-top: 30px !important;}
+		.padding500{padding: 50px 0;}
+		.padding700{padding: 70px 0;}
 		.siteBlue{color: #2A4494 !important;}
 		.siteGrey{color: #848D9C;}
 		hr{border: 0; border-top: 1px solid #2A4494;}
 		.text-left{text-align: left !important;}
+		.text-right{text-align: right !important;}
+		.width80{width: 80%;}
+		.width90{width: 90%;}
+		.specialMarg1{margin-right: 20px;}
+		.specialMarg2{margin-left: 20px;}
 		
-		/* homePage styling */
+		/* header styling */
+		header{position: fixed; padding: 5px; z-index: 999; background: #fff; width: 100%; top: 0;}
+		.rightHeader{float: right; padding-right: 20px; color: #2A4494;}
+		.nav-links{padding: 0; margin: 0; float: left; padding-top: 15px;}
+		.nav-links li{display: inline-block; font-size: 18px; margin-right: 15px; cursor:pointer;}
+		.nav-links li:hover{color: rgb(223, 227, 227);}
+		#headerCTA{background: #fff; color: #2A4494; float: right;}
+		#headerCTA:hover{background: #2A4494; color: #fff;}
+		.customer{margin-right: 10px; margin-bottom: 15px; text-align: right;}
 
+		#hero-image{background: url(images/heroHome.jpg) no-repeat; background-size: cover; width: 100%; height: 55vh;
+					margin-top: 110px; padding-top: 7%; background-position: center;}
+		.CTA{border-radius: 30px; width: 182px; height: 52px; background: #2A4494; color: #fff; text-align: center;
+			 border: 1px solid #2A4494; font-size: 20px; line-height: 24px; font-weight: 700; box-sizing: border-box;
+			 padding-top: 13px; cursor: pointer; transition: all 0.5s ease;}
+		.CTA:hover{box-shadow: -webkit-box-shadow: 0px 0px 4px 2px rgba(51,51,51,.7);
+			-moz-box-shadow: 0px 0px 4px 2px rgba(51,51,51,.7);
+			box-shadow: 0px 0px 4px 2px rgba(51,51,51,.7);}
+		h1{font-size: 28px; margin-bottom: 15px; letter-spacing: 1px; color: #2A4494;}
+		.quote-div{color: #fff; margin-top: 7%; text-align: center; max-width: 450px;}
+
+		.grey-back{background: rgba(248,249,249,1);}
+		.icon-title{color: #2A4494; font-size: 20px; font-weight: bold; float: right; width: 85%; margin-bottom: 15px;}
+		.iconTop{width: 40px; height: 40px; padding-top: 5px;}
+		.iconTop3{width: 20px;}
+		.playIcon{vertical-align: middle; margin-right: 5px;}
+
+		.blue-div, .img-div{background: #2A4494; color: #fff; border-radius: 30px; font-size: 18px;
+		 		  padding: 30px; display: inline-block; max-width: 530px; position: relative; z-index: 100;
+		 		  box-shadow: -webkit-box-shadow: 0px 0px 11px 1px rgba(204,204,204,1);
+					-moz-box-shadow: 0px 0px 11px 1px rgba(204,204,204,1);
+					box-shadow: 0px 0px 11px 1px rgba(204,204,204,1);}
+		#blue-div1{margin-left: -36px; vertical-align: -90px;}
+		.img-div{background: #fff;}
+		.blue-title{max-width: 370px; line-height: 1.5; font-size: 26px; margin-bottom: 30px;}
+		.img-div2{text-align: right; width: 450px; margin-left: -85px; z-index: 1; vertical-align: 20px;}
+		#img-div3{margin: 0; width: 430px;}
+		#blue-div3{margin-left: -64px; vertical-align: -60px;}
+		
+		footer{background: #12196b; padding: 120px 0 60px; text-align: center; 
+			   margin-top: 60px; font-size: 14px; color: #fff;}
 
 		/* mobile styling rules */
 		@media only screen and (max-width: 1060px) {
@@ -72,6 +128,7 @@
 			.flex-container{display: block;}
 			.Fright, .Fleft{float: none;}
 			.mobileHide{display: none;}
+			footer{padding: 90px 30px 30px;font-size: 12px;}
 		}
 	</style>
 		<!--[if lt IE 9]>
@@ -80,20 +137,179 @@
 	</head>
 	<body>
 		<header>
+			<div class="desktopHeader">
 			<a href="homePage.html">
 				<img src="images/logo.png" alt="">
 			</a>
+			<div class="rightHeader">
+				<p class="customer">Customer Service: <a href="tel:1-800-220-6570">800-220-6570</a></p>
+				<ul class="nav-links">
+					<li><a href="">Home</a></li>
+					<li><a href="">Videos</a></li>
+					<li><a href="">Reviews</a></li>
+					<li><a href="">FAQs</a></li>
+					<li><a href="">Customer Service</a></li>
+					<li><a href="">Manual</a></li>
+					<li><a href="">Store</a></li>
+				</ul>
+				<div class="CTA" id="headerCTA">ORDER NOW</div>
+				<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+			</div>
 		</header>
 		<div id="hero-image">
 			<div class="row">
 				<div class="container relative">
-						<h1>Buy Aquatru</h1>
+					<div class="welcome-div">
+						<h1>WELCOME TO AQUATRU&reg;</h1>
+						<h1>SAY GOODBYE TO TOXIC<br> CHEMICALS</h1>
+						<div class="CTA">ORDER NOW</div>
+					</div>
+					<div class="quote-div">
+						<p class="font26">"AquaTru is the only water purification system I have ever recommended."</p>
+						<p class="font28 marg20"><b>Erin Brockovich</b></p>
+						<p class="font18">Clean Water Advocate portrayed in the blockbuster film Erin Brockovich</p>
+					</div>
 				</div>
 			</div>
 		</div>
+		<div class="grey-back padding500 marbot80">
+		<div class="row">
+			<div class="container flex-container">
+				<div class="flex1">
+					<div class="icon-title">
+						<p>Better than bottled water right from the tap; same great taste and no plastic waste!</p>
+					</div>
+					<img src="images/icon_no-plastic.png" alt="" class="iconTop">
+					<div class="clear"></div>
+					<p>The first and only countertop reverse osmosis water purifier that is certified to create bottled-quality water from your tap. No plumbing or installation required.</p>
+				</div>
+				<div class="flex1 marg04Per">
+					<div class="icon-title">
+						<p>Ultra Reverse Osmosis<sup>&trade;</sup> Technology</p>
+					</div>
+					<img src="images/icon_osmosis.png" alt="" class="iconTop">
+					<div class="clear"></div>
+					<p>AquaTru's exclusive, patent pending Ultra Pure Reverse Osmosis Technology miniaturized the same reverse osmosis technology used by all the major bottled brands and puts it into a compact countertop water purifier. (<span class="siteBlue bold" id="video1">click</span> here to watch animation of how AquaTru works)</p>
+				</div>
+				<div class="flex1">
+					<div class="icon-title width90">
+						<p>AquaTrue removes toxic chemicals in your tap water</p>
+					</div>
+					<img src="images/icon_toxic.png" alt="" class="iconTop iconTop3">
+					<div class="clear"></div>
+					<div id="video2">
+					<img src="images/icon_play.png" alt="" class="playIcon"> <span class="bold siteBlue">Learn more about AquaTru.</span>
+					</div>
+				</div>
+			</div><!-- container -->
+		</div><!-- row -->
+		</div>
 		<div class="row">
 			<div class="container">
-
+				<div class="img-div">
+					<img src="images/faucet.jpg" alt="">
+				</div>
+				<div class="blue-div" id="blue-div1">
+					<p class="blue-title">DID YOU KNOW WATER CAN MAKE YOU SICK?</p>
+					<p class="marbot20">The Environmental Protection Agency (EPA) regulates about 100 contaminants in our tap water, but a study shows that there are over 300 harmful contaminants in tap water.</p>
+					<p class="marbot20">If you live in the United States, there is a nearly one-in-four chance your tap water is either unsafe to drink or has not been properly monitored for contaminants in accordance with federal law, a new study has found.</p>
+					<p class="marbot20">AquaTru is certified to remove over 15x more contaminants than the best selling pitcher water filter.</p>
+					<p class="marbot10"><b>Some of those contaminants include:</b></p>
+					<p class="marbot5">Lead</p>
+					<p class="marbot5">Chromium 6</p>
+					<p class="marbot5">Chlorine and Chloramine</p>
+					<p class="marbot5">Fluoride</p>
+					<p class="marbot5">Cancer Causing Chemicals</p>
+					<p class="marbot5">Herbicides & Pesticides</p>
+					<p>And 100's of other dangerous contaminants</p>
+				</div>
+				<div class="clear marbot80"></div>
+				<div class="blue-div">
+					<p class="blue-title">WHAT'S WRONG WITH TYPICAL FRIDGE &amp; WATER FILTERS?</p>
+					<p>They are filters, not purifiers. Most pitcher and refrigerator filters are only designed to make your water taste better, but not necessarily safer. These filters remove simple chemicals like chlorine, but may leave behind a toxic chemical concoction for you to drink.</p>
+				</div>
+				<div class="img-div img-div2">
+					<img src="images/fridge-pitcher.jpg" alt="">
+				</div>
+				<div class="clear marbot80"></div>
+				<div class="img-div img-div2" id="img-div3">
+					<img src="images/fridge-pitcher.jpg" alt="">
+				</div>
+				<div class="blue-div" id="blue-div3">
+					<p class="blue-title">WHAT'S WRONG WITH BOTTLED WATER?</p>
+					<p class="marbot20">Over 73 billion half-liter bottles of water are consumed in the US per year. Of those, 50 billion bottles end up in landfills or polluting our waterways.</p>
+					<p class="marbot20">It takes over 17 million barrels of oil to product the plastic required for bottle waters consumed by Americans in a year, which is enough oil to fuel more than 1 million cars for an entire year.</p>
+					<p class="marbot20">Over 90% of the major bottled brands of water contain plastic microparticles. Plus, toxins can leach from the bottles into your water over time.</p>
+				</div>
+				<div class="clear marbot80"></div>
+			</div><!-- container -->
+		</div><!-- row -->
+		<div class="grey-back padding700 marbot80">
+		<div class="row">
+			<h2 class="siteBlue center font36 marbot30">WHY AQUATRU?</h2>
+			<div class="container flex-container">
+				<div class="flex1 specialMarg1">
+				  <div class="reason-div marbot30">
+					<img src="images/icon_taste.png" alt="">
+					<div class="Fright width80">
+						<p class="siteBlue font22 marbot5">Taste</p>
+						<p class="font18">AquaTru provides great-tasting pure water, just like your favorite bottled water provides.</p>
+					</div>
+					<div class="clear"></div>
+				  </div>
+				  <div class="reason-div marbot30">
+					<img src="images/icon_cost.png" alt="">
+					<div class="Fright width80">
+						<p class="siteBlue font22 marbot5">Cost</p>
+						<p class="font18">Based on a person drinking 8 glasses of bottled water a day for one year. That equals 1,500 pints of bottled water annually. That comes out to 0.20 cents a pint or $300 a year for one person. For a family of 4, the cost would be $1,200/Year. Over 5 years, the cost for a family of 4 then becomes $6,000. Comparatively, the cost of Aquatru over 5 years is $700.</p>
+					</div>
+					<div class="clear"></div>
+				  </div>
+				  <div class="reason-div marbot30">
+					<img src="images/icon_quality.png" alt="">
+					<div class="Fright width80">
+						<p class="siteBlue font22 marbot5">Quality</p>
+						<p class="font18 marbot10">Unlike regular pitcher or refrigerator filters, AquaTru takes out virtually all toxic chemicals in your tap water.</p>
+						<p class="font18">AquaTru is certified to remove 74 contaminants regulated by the Environmental Protection Agency.</p>
+					</div>
+					<div class="clear"></div>
+				  </div>
+				</div>
+				<div class="flex1 specialMarg2">
+					<div class="reason-div marbot30">
+					<img src="images/icon_environ.png" alt="">
+					<div class="Fright width80">
+						<p class="siteBlue font22 marbot5">Environmentally Kind</p>
+						<p class="font18">AquaTru is extremely efficient so you don’t get the water waste like with other RO systems. Also, you are not trucking water all over for delivery, nor are you using up single-use water bottles that are so harmful to our planet &amp; animals.</p>
+					</div>
+					<div class="clear"></div>
+				  </div>
+				  <div class="reason-div marbot30">
+					<img src="images/icon_ease.png" alt="">
+					<div class="Fright width80">
+						<p class="siteBlue font22 marbot5">Ease</p>
+						<p class="font18">No heavy bottles to carry around or filters to change every few months. AquaTru filters last between six months and two years depending on water usage and local water quality.</p>
+					</div>
+					<div class="clear"></div>
+				  </div>
+				  <div class="reason-div marbot30">
+					<img src="images/icon_osmosis_drop.png" alt="">
+					<div class="Fright width80">
+						<p class="siteBlue font22 marbot5">Reverse Osmosis Technology</p>
+						<p class="font18 marbot10">AquaTru's exclusive, patent pending Ultra Pure Reverse Osmosis Technology miniaturized the same reverse osmosis technology used by all the major bottled brands and puts it into a compact countertop water purifier.</p>
+					</div>
+					<div class="clear"></div>
+				  </div>
+				</div>
+			</div><!-- container -->
+		</div><!-- row -->
+		</div>
+		<div class="row">
+			<h2 class="siteBlue center font36 marbot30">WHAT OUR CUSTOMERS ARE SAYING</h2>
+			<div class="container flex-container">
+				
 			</div><!-- container -->
 		</div><!-- row -->
 		<footer>
