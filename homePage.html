@@ -42,6 +42,7 @@
 		.font14{font-size: 14px;}
 		.font20{font-size: 20px;}
 		.font22{font-size: 22px;}
+		.font16{font-size: 16px;}
 		.font18{font-size: 18px;}
 		.font26{font-size: 26px;}
 		.font28{font-size: 28px;}
@@ -66,6 +67,7 @@
 		.marg40{margin: 40px auto;}
 		.padtop5{padding-top: 5px;}
 		.padtop30{padding-top: 30px !important;}
+		.padbot80{padding-bottom: 80px;}
 		.padding500{padding: 50px 0;}
 		.padding700{padding: 70px 0;}
 		.siteBlue{color: #2A4494 !important;}
@@ -79,7 +81,7 @@
 		.specialMarg2{margin-left: 20px;}
 		
 		/* header styling */
-		header{position: fixed; padding: 5px; z-index: 999; background: #fff; width: 100%; top: 0;}
+		header{position: fixed; padding: 5px; z-index: 99; background: #fff; width: 100%; top: 0;}
 		.rightHeader{float: right; padding-right: 20px; color: #2A4494;}
 		.nav-links{padding: 0; margin: 0; float: left; padding-top: 15px;}
 		.nav-links li{display: inline-block; font-size: 18px; margin-right: 15px; cursor:pointer;}
@@ -116,12 +118,28 @@
 		.img-div2{text-align: right; width: 450px; margin-left: -85px; z-index: 1; vertical-align: 20px;}
 		#img-div3{margin: 0; width: 430px;}
 		#blue-div3{margin-left: -64px; vertical-align: -60px;}
+
+		.blue-drop{width: 25px; margin: 10px 0 15px;}
+		.bottomBlueDiv{font-size: 16px; max-width: 290px; height: 140px; margin-right: 10px;}
+
+		#looserImage{background: url(images/bottomImage.jpg) no-repeat; background-size: cover; width: 100%; height: 55vh;
+					padding-top: 5%; background-position: center;}
+		#looserImage h2{color: rgb(24, 31, 111) !important;}
+		#bottomOrder{max-width: 400px; padding-top: 10%;}
+		#video1, #video2{cursor: pointer;}
+
+		/*   video popup css   */
+		#overlay{width: 100%; height: 100%; position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+				 background-color: rgba(119, 119, 119, 0.7); transition: background-color 300ms ease-in-out;
+				 cursor: pointer;  -webkit-animation: fadein .5s; animation: fadein .5s; z-index: 200; display: none; overflow: scroll;
+				 padding-top: 15%;}
+		#close-overlay{right: -15px; top: -15px; z-index: 100; cursor: pointer; padding: 2px 8px; position:absolute; color: #fff;
+					 font-weight: 100; font-size: 20px; background: #000; border: 3px solid #fff; border-radius: 50%;}
 		
-		footer{background: #12196b; padding: 120px 0 60px; text-align: center; 
-			   margin-top: 60px; font-size: 14px; color: #fff;}
+		footer{background: #191f6b; padding: 120px 0 60px; text-align: center; font-size: 14px; color: #fff;}
 
 		/* mobile styling rules */
-		@media only screen and (max-width: 1060px) {
+		@media only screen and (max-width: 1099px) {
 			html,body{font-size: 14px;}
 			.container{width: auto;}
 			.row{padding: 0 15px;}
@@ -136,6 +154,14 @@
 		<![endif]-->
 	</head>
 	<body>
+		<div id="overlay">
+			<div class="row">
+				<div class="container relative">
+				<div id="close-overlay">X</div>
+			<div id="overlay-content"></div>
+			</div> <!-- end of container -->
+		</div> <!-- end of row and overlay -->
+		</div> 
 		<header>
 			<div class="desktopHeader">
 			<a href="homePage.html">
@@ -282,7 +308,7 @@
 					<img src="images/icon_environ.png" alt="">
 					<div class="Fright width80">
 						<p class="siteBlue font22 marbot5">Environmentally Kind</p>
-						<p class="font18">AquaTru is extremely efficient so you don’t get the water waste like with other RO systems. Also, you are not trucking water all over for delivery, nor are you using up single-use water bottles that are so harmful to our planet &amp; animals.</p>
+						<p class="font18">AquaTru is extremely efficient so you don't get the water waste like with other RO systems. Also, you are not trucking water all over for delivery, nor are you using up single-use water bottles that are so harmful to our planet &amp; animals.</p>
 					</div>
 					<div class="clear"></div>
 				  </div>
@@ -306,12 +332,57 @@
 			</div><!-- container -->
 		</div><!-- row -->
 		</div>
-		<div class="row">
-			<h2 class="siteBlue center font36 marbot30">WHAT OUR CUSTOMERS ARE SAYING</h2>
+		<div class="row padbot80">
+			<h2 class="siteBlue center font36 marbot20">WHAT OUR CUSTOMERS ARE SAYING</h2>
 			<div class="container flex-container">
-				
+				<div class="flex1 center">
+					<div class="blue-div bottomBlueDiv">
+						<img src="images/icon_quote.png" alt="" class="marbot20">
+						<p>Best water filter ever! I am so glad I got the early preorder on Natural News. Thank you so much for this game changer. I hope in the fu ture you guys make a whole house unit.</p>
+					</div>
+					<img src="images/icon_testimonial-drop.png" alt="" class="blue-drop">
+					<p class="siteBlue">Otilio R.</p>
+				</div>
+				<div class="flex1 center">
+					<div class="blue-div bottomBlueDiv">
+						<img src="images/icon_quote.png" alt="" class="marbot20">
+						<p>We've had our AquaTru system for a little over a week now and I can truly say that it is fantastic! Pure, clean water, easy use, and no more trips to the Glacier water machines!</p>
+					</div>
+					<img src="images/icon_testimonial-drop.png" alt="" class="blue-drop">
+					<p class="siteBlue">Rick L.</p>
+				</div>
+				<div class="flex1 center">
+					<div class="blue-div bottomBlueDiv">
+						<img src="images/icon_quote.png" alt="" class="marbot20">
+						<p>I just wanted to say that I received my AquaTru two weeks ago. WOW! Amazing tasting water. I feel better!</p>
+					</div>
+					<img src="images/icon_testimonial-drop.png" alt="" class="blue-drop">
+					<p class="siteBlue">Debra N.</p>
+				</div>
 			</div><!-- container -->
 		</div><!-- row -->
+		<div class="grey-back padding700">
+		<div class="row">
+			<div class="container center">
+				<h2 class="siteBlue font36 marbot10">HOW IT WORKS</h2>
+				<p class="font18">AquaTru's Ultra Reverse Osmosis Technology is a<br> 4-Stage purification process:</p>
+				<script src="https://fast.wistia.com/embed/medias/m8j1ywwj68.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:5% 0 0 0;position:relative; max-width: 700px; margin: 30px auto; height: 300px;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_m8j1ywwj68 videoFoam=true" style="height:100%;position:relative;width:100%">&nbsp;</div></div></div>
+			</div><!-- container -->
+		</div><!-- row -->
+		</div>
+		<div id="looserImage">
+			<div class="row">
+				<div class="container">
+					<h2 class="siteBlue font36 marbot10 center">IT'S TIME TO JOIN THE WATER REVOLUTION</h2>
+					<p class="font18 center bold">Save Money. Drink Safely. Save the Environment. AquaTru</p>
+					<div id="bottomOrder">
+						<p class="font22 bold marbot10">ORDER AQUATRU</p>
+						<p class="font22 marbot30">The best water you've ever tasted or your money back.</p>
+						<div class="CTA">ORDER NOW</div>
+					</div>
+				</div><!-- container -->
+			</div><!-- row -->
+		</div>
 		<footer>
 			<div class="container">
 				<img src="images/logo-footer.png" alt="">
@@ -326,23 +397,6 @@
 			</div>
 		</footer>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script>
-			$(document).ready(function() {
-				$("#shippingBox").click(function() {
-
-					function ShipSame() {
-						$("#shippingBox").css("background", "#fff");
-						$("#shipping-wrapper").slideDown();
-					};
-
-					function ShipDiff() {
-						$("#shippingBox").css("background", "#2A4494");
-						$("#shipping-wrapper").slideUp();
-					};
-
-					return (this.tog = !this.tog) ? ShipSame() : ShipDiff();
-				});
-			});
-		</script>
+		<script src="js/main.js"></script>
 	</body>
 	</html>
