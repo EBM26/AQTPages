@@ -32,4 +32,25 @@ $(document).ready(function() {
 		return (this.tog = !this.tog) ? ShipSame() : ShipDiff();
 	});
 
+	/// hamburger rotate code
+	function MenuOpen() {	  
+		$( ".mobile-nav-button .mobile-nav-button__line:nth-of-type(1)" ).addClass( "mobile-nav-button__line--1");
+		$( ".mobile-nav-button .mobile-nav-button__line:nth-of-type(2)" ).addClass( "mobile-nav-button__line--2");  
+		$( ".mobile-nav-button .mobile-nav-button__line:nth-of-type(3)" ).addClass( "mobile-nav-button__line--3");
+		$('.mobile-menu').slideDown("slow"); 
+		return false;
+	}
+
+	function MenuClose() {	  
+		$( ".mobile-nav-button .mobile-nav-button__line:nth-of-type(1)" ).removeClass( "mobile-nav-button__line--1");
+		$( ".mobile-nav-button .mobile-nav-button__line:nth-of-type(2)" ).removeClass( "mobile-nav-button__line--2");  
+		$( ".mobile-nav-button .mobile-nav-button__line:nth-of-type(3)" ).removeClass( "mobile-nav-button__line--3");
+		$('.mobile-menu').slideUp("slow");
+		return false;
+	}
+
+	$('.mobile-nav-button').click(function() { 
+		return (this.tog = !this.tog) ? MenuOpen() : MenuClose();
+	});
+
 });

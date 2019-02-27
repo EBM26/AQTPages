@@ -127,6 +127,7 @@
 		#looserImage h2{color: rgb(24, 31, 111) !important;}
 		#bottomOrder{max-width: 400px; padding-top: 10%;}
 		#video1, #video2{cursor: pointer;}
+		.desktopHide{display: none;}
 
 		/*   video popup css   */
 		#overlay{width: 100%; height: 100%; position: fixed; top: 0; left: 0; right: 0; bottom: 0;
@@ -143,10 +144,34 @@
 			html,body{font-size: 14px;}
 			.container{width: auto;}
 			.row{padding: 0 15px;}
-			.flex-container{display: block;}
+			.flex-container, .desktopHide{display: block;}
 			.Fright, .Fleft{float: none;}
 			.mobileHide{display: none;}
+			.customer{margin-bottom: 0;}
+			header{position: inherit; padding: 0;}
+			.grey-box{background: rgba(213,216,221,1); color: #2A4494; padding: 7px 0; margin-bottom: 3px;}
+			header img{width: 73px; height: 39px;}
+			/* mobile navbar css */
+			.mobile-menu{display: none; width: 100%; background: #fff; z-index: 9998; padding: 10px 0; position: absolute; top: 80px;
+						 left: 0; padding-left: 15px;}
+			.mobile-menu ul li{list-style: none; margin-bottom: 10px;}
+			.mobile-menu ul li:last-child{margin-bottom: 0px;}
+			.mobile-menu ul li a{display: block; text-align: left; text-decoration: none; color: #2A4494; font-size: 16px;}
+
+			.mobile-menu--open{opacity: 1; display: block;}
+			.mobile-nav-button{width: 30px; position: absolute; margin: 2rem; right: -20px; top: 12px; z-index: 9999; cursor: pointer;
+							   height: 30px;}
+			.mobile-nav-button .mobile-nav-button__line{width: 100%; height: 3px; background: #2A4494; position: relative; transition: .5s ease;}
+			.mobile-nav-button .mobile-nav-button__line:nth-of-type(2){margin: 0.4rem 0;}
+			.mobile-nav-button .mobile-nav-button__line--1{transform: rotate(45deg); top: 13px; position: absolute;}
+			.mobile-nav-button .mobile-nav-button__line--2{display: none;}
+			.mobile-nav-button .mobile-nav-button__line--3{transform: rotate(135deg); top: 13px; position: absolute;}
 			footer{padding: 90px 30px 30px;font-size: 12px;}
+			#hero-image{margin-top: 0; background: url(images/erin_hero_gradient_mobile.jpg) no-repeat center; background-size: cover;
+						padding: 0;}
+			.welcome-div h1{color: #fff; font-size: 18px;}
+			.welcome-div{text-align: center; margin: auto; padding-top: 25vh;}
+			.welcome-div .CTA{margin: auto;}
 		}
 	</style>
 		<!--[if lt IE 9]>
@@ -163,12 +188,12 @@
 		</div> <!-- end of row and overlay -->
 		</div> 
 		<header>
-			<div class="desktopHeader">
+			<div class="desktopHeader mobileHide">
 			<a href="homePage.html">
 				<img src="images/logo.png" alt="">
 			</a>
 			<div class="rightHeader">
-				<p class="customer">Customer Service: <a href="tel:1-800-220-6570">800-220-6570</a></p>
+				<p class="customer">Customer Service: 800-220-6570</p>
 				<ul class="nav-links">
 					<li><a href="">Home</a></li>
 					<li><a href="">Videos</a></li>
@@ -183,6 +208,31 @@
 			</div>
 			<div class="clear"></div>
 			</div>
+			<div class="desktopHide mobileHeader relative">
+				<div class="grey-box"><p class="customer">Customer Service: <a href="tel:1-800-220-6570">800-220-6570</a></p></div>
+				<img src="images/logo.png" alt="" id="mobileLogo">
+				<div class="mobile-nav">
+					<div class="mobile-nav-button">
+						<div class="mobile-nav-button__line"></div>
+						<div class="mobile-nav-button__line"></div>
+						<div class="mobile-nav-button__line"></div>
+
+					</div>
+					<nav class="mobile-menu">
+						<ul>
+						   <li><a href="">Home</a></li>
+						   <li><a href="">Videos</a></li>
+						   <li><a href="">Reviews</a></li>
+						   <li><a href="">FAQs</a></li>
+						   <li><a href="">Faq</a></li>
+						   <li><a href="">Customer Service</a></li>
+						   <li><a href="">Manual</a></li>               
+						   <li><a href="">Store</a></li>               
+						</ul>
+					</nav>
+				</div>
+				<div class="clear"></div>
+			</div>
 		</header>
 		<div id="hero-image">
 			<div class="row">
@@ -192,7 +242,7 @@
 						<h1>SAY GOODBYE TO TOXIC<br> CHEMICALS</h1>
 						<div class="CTA">ORDER NOW</div>
 					</div>
-					<div class="quote-div">
+					<div class="quote-div mobileHide">
 						<p class="font26">"AquaTru is the only water purification system I have ever recommended."</p>
 						<p class="font28 marg20"><b>Erin Brockovich</b></p>
 						<p class="font18">Clean Water Advocate portrayed in the blockbuster film Erin Brockovich</p>
