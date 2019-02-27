@@ -76,7 +76,7 @@
 		.text-left{text-align: left !important;}
 		.text-right{text-align: right !important;}
 		.width80{width: 80%;}
-		.width90{width: 90%;}
+		.width90{width: 90% !important;}
 		.specialMarg1{margin-right: 20px;}
 		.specialMarg2{margin-left: 20px;}
 		
@@ -107,7 +107,7 @@
 		.iconTop3{width: 20px;}
 		.playIcon{vertical-align: middle; margin-right: 5px;}
 
-		.blue-div, .img-div{background: #2A4494; color: #fff; border-radius: 30px; font-size: 18px;
+		.blue-div, .img-div{background: #2A4494; color: #fff; border-radius: 30px; font-size: 18px; text-align: left;
 		 		  padding: 30px; display: inline-block; max-width: 530px; position: relative; z-index: 100;
 		 		  box-shadow: -webkit-box-shadow: 0px 0px 11px 1px rgba(204,204,204,1);
 					-moz-box-shadow: 0px 0px 11px 1px rgba(204,204,204,1);
@@ -119,7 +119,7 @@
 		#img-div3{margin: 0; width: 430px;}
 		#blue-div3{margin-left: -64px; vertical-align: -60px;}
 
-		.blue-drop{width: 25px; margin: 10px 0 15px;}
+		.blue-drop{width: 25px; margin: 10px auto 15px; display: block;}
 		.bottomBlueDiv{font-size: 16px; max-width: 290px; height: 140px; margin-right: 10px;}
 
 		#looserImage{background: url(images/bottomImage.jpg) no-repeat; background-size: cover; width: 100%; height: 55vh;
@@ -128,6 +128,8 @@
 		#bottomOrder{max-width: 400px; padding-top: 10%;}
 		#video1, #video2{cursor: pointer;}
 		.desktopHide{display: none;}
+		.icon-title2{color: #2A4494; margin-bottom: 5px; font-size: 22px; width: 80%; float: right;}
+		.minus60Top{margin-top: -60px;}
 
 		/*   video popup css   */
 		#overlay{width: 100%; height: 100%; position: fixed; top: 0; left: 0; right: 0; bottom: 0;
@@ -143,10 +145,10 @@
 		@media only screen and (max-width: 1099px) {
 			html,body{font-size: 14px;}
 			.container{width: auto;}
-			.row{padding: 0 15px;}
+			.row{padding: 0 10px;}
 			.flex-container, .desktopHide{display: block;}
 			.Fright, .Fleft{float: none;}
-			.mobileHide{display: none;}
+			.mobileHide, .img-div{display: none;}
 			.customer{margin-bottom: 0;}
 			header{position: inherit; padding: 0;}
 			.grey-box{background: rgba(213,216,221,1); color: #2A4494; padding: 7px 0; margin-bottom: 3px;}
@@ -166,12 +168,42 @@
 			.mobile-nav-button .mobile-nav-button__line--1{transform: rotate(45deg); top: 13px; position: absolute;}
 			.mobile-nav-button .mobile-nav-button__line--2{display: none;}
 			.mobile-nav-button .mobile-nav-button__line--3{transform: rotate(135deg); top: 13px; position: absolute;}
-			footer{padding: 90px 30px 30px;font-size: 12px;}
+			footer{padding: 90px 15px 30px; font-size: 12px;}
 			#hero-image{margin-top: 0; background: url(images/erin_hero_gradient_mobile.jpg) no-repeat center; background-size: cover;
 						padding: 0;}
 			.welcome-div h1{color: #fff; font-size: 18px;}
 			.welcome-div{text-align: center; margin: auto; padding-top: 25vh;}
-			.welcome-div .CTA{margin: auto;}
+			.welcome-div .CTA, .minus60Top, .specialMarg2{margin: auto;}
+			#overlay{padding-top: 50%;}
+			.white-back{background: #fff;}
+			.erin-quote-div{width: 80%; color: #2A4494; text-align: center; margin: 40px auto;}
+			.padding500{padding: 30px 0;}
+			.padding700{padding: 50px 0;}
+			.icon-title{font-size: 16px;}
+			.mobileMarg00200{margin: 0 0 20px 0;}
+			.marbot80{margin-bottom: 40px;}
+			.blue-div{margin: auto !important; font-size: 14px; padding: 20px 15px;}
+			.blue-title{max-width: none; line-height: inherit; margin-bottom: 20px;}
+			.font36{font-size: 30px;}
+			.reason-div img{width: 42px; margin-bottom: 5px;}
+			.mobile100{width: 100%;}
+			.mobileFont14{font-size: 14px;}
+			.mobileFont16{font-size: 16px;}
+			.mobileMarbot40{margin-bottom: 40px;}
+			.wistia_responsive_padding{height: 150px !important;}
+			#looserImage{background: rgba(240,240,242,1); padding: 20% 0; height: auto;}
+			#looserImage h2{font-size: 26px;}
+			#bottomOrder{padding-top: 20%;}
+			#logo-footer{width: 150px;}
+			.mobileMartop5{margin-top: 5px;}
+		}
+
+		@media only screen and (max-width: 736px) and (orientation: landscape) {
+			#overlay{padding-top: 2%;}
+			#hero-image{height: 70vh; padding: 10% 0;}
+			.icon-title, .icon-title2{width: 90%;}
+			.wistia_responsive_padding{height: 300px !important;}
+			#looserImage{padding: 10% 0;}
 		}
 	</style>
 		<!--[if lt IE 9]>
@@ -250,32 +282,39 @@
 				</div>
 			</div>
 		</div>
-		<div class="grey-back padding500 marbot80">
+		<div class="row desktopHide">
+			<div class="container erin-quote-div">
+				<p class="bold font18">"AquaTru is the only water purification system I have ever recommended."</p>
+				<p class="bold font28 martop10 marbot20">Erin Brockovich</p>
+				<p>Clean Water Advocate portrayed in the blockbuster film Erin Brockovich</p>
+			</div><!-- container -->
+		</div><!-- row -->
+		<div class="grey-back padding500 marbot80 white-back">
 		<div class="row">
 			<div class="container flex-container">
-				<div class="flex1">
+				<div class="flex1 mobileMarg00200">
 					<div class="icon-title">
 						<p>Better than bottled water right from the tap; same great taste and no plastic waste!</p>
 					</div>
 					<img src="images/icon_no-plastic.png" alt="" class="iconTop">
 					<div class="clear"></div>
-					<p>The first and only countertop reverse osmosis water purifier that is certified to create bottled-quality water from your tap. No plumbing or installation required.</p>
+					<p class="mobileMartop5">The first and only countertop reverse osmosis water purifier that is certified to create bottled-quality water from your tap. No plumbing or installation required.</p>
 				</div>
-				<div class="flex1 marg04Per">
+				<div class="flex1 marg04Per mobileMarg00200">
 					<div class="icon-title">
 						<p>Ultra Reverse Osmosis<sup>&trade;</sup> Technology</p>
 					</div>
 					<img src="images/icon_osmosis.png" alt="" class="iconTop">
 					<div class="clear"></div>
-					<p>AquaTru's exclusive, patent pending Ultra Pure Reverse Osmosis Technology miniaturized the same reverse osmosis technology used by all the major bottled brands and puts it into a compact countertop water purifier. (<span class="siteBlue bold" id="video1">click</span> here to watch animation of how AquaTru works)</p>
+					<p class="mobileMartop5">AquaTru's exclusive, patent pending Ultra Pure Reverse Osmosis Technology miniaturized the same reverse osmosis technology used by all the major bottled brands and puts it into a compact countertop water purifier. (<span class="siteBlue bold" id="video1">click</span> here to watch animation of how AquaTru works)</p>
 				</div>
-				<div class="flex1">
+				<div class="flex1 mobileMarg00200">
 					<div class="icon-title width90">
 						<p>AquaTrue removes toxic chemicals in your tap water</p>
 					</div>
 					<img src="images/icon_toxic.png" alt="" class="iconTop iconTop3">
 					<div class="clear"></div>
-					<div id="video2">
+					<div id="video2" class="mobileMartop5">
 					<img src="images/icon_play.png" alt="" class="playIcon"> <span class="bold siteBlue">Learn more about AquaTru.</span>
 					</div>
 				</div>
@@ -283,7 +322,7 @@
 		</div><!-- row -->
 		</div>
 		<div class="row">
-			<div class="container">
+			<div class="container center">
 				<div class="img-div">
 					<img src="images/faucet.jpg" alt="">
 				</div>
@@ -329,26 +368,26 @@
 				<div class="flex1 specialMarg1">
 				  <div class="reason-div marbot30">
 					<img src="images/icon_taste.png" alt="">
-					<div class="Fright width80">
-						<p class="siteBlue font22 marbot5">Taste</p>
-						<p class="font18">AquaTru provides great-tasting pure water, just like your favorite bottled water provides.</p>
+					<p class="icon-title2">Taste</p>
+					<div class="Fright width80 minus60Top mobile100">
+						<p class="font18 mobileFont14">AquaTru provides great-tasting pure water, just like your favorite bottled water provides.</p>
 					</div>
 					<div class="clear"></div>
 				  </div>
 				  <div class="reason-div marbot30">
 					<img src="images/icon_cost.png" alt="">
-					<div class="Fright width80">
-						<p class="siteBlue font22 marbot5">Cost</p>
-						<p class="font18">Based on a person drinking 8 glasses of bottled water a day for one year. That equals 1,500 pints of bottled water annually. That comes out to 0.20 cents a pint or $300 a year for one person. For a family of 4, the cost would be $1,200/Year. Over 5 years, the cost for a family of 4 then becomes $6,000. Comparatively, the cost of Aquatru over 5 years is $700.</p>
+					<p class="icon-title2">Cost</p>
+					<div class="Fright width80 minus60Top mobile100">
+						<p class="font18 mobileFont14">Based on a person drinking 8 glasses of bottled water a day for one year. That equals 1,500 pints of bottled water annually. That comes out to 0.20 cents a pint or $300 a year for one person. For a family of 4, the cost would be $1,200/Year. Over 5 years, the cost for a family of 4 then becomes $6,000. Comparatively, the cost of Aquatru over 5 years is $700.</p>
 					</div>
 					<div class="clear"></div>
 				  </div>
 				  <div class="reason-div marbot30">
 					<img src="images/icon_quality.png" alt="">
-					<div class="Fright width80">
-						<p class="siteBlue font22 marbot5">Quality</p>
-						<p class="font18 marbot10">Unlike regular pitcher or refrigerator filters, AquaTru takes out virtually all toxic chemicals in your tap water.</p>
-						<p class="font18">AquaTru is certified to remove 74 contaminants regulated by the Environmental Protection Agency.</p>
+					<p class="icon-title2">Quality</p>
+					<div class="Fright width80 minus60Top mobile100">
+						<p class="font18 marbot10 mobileFont14">Unlike regular pitcher or refrigerator filters, AquaTru takes out virtually all toxic chemicals in your tap water.</p>
+						<p class="font18 mobileFont14">AquaTru is certified to remove 74 contaminants regulated by the Environmental Protection Agency.</p>
 					</div>
 					<div class="clear"></div>
 				  </div>
@@ -356,25 +395,25 @@
 				<div class="flex1 specialMarg2">
 					<div class="reason-div marbot30">
 					<img src="images/icon_environ.png" alt="">
-					<div class="Fright width80">
-						<p class="siteBlue font22 marbot5">Environmentally Kind</p>
-						<p class="font18">AquaTru is extremely efficient so you don't get the water waste like with other RO systems. Also, you are not trucking water all over for delivery, nor are you using up single-use water bottles that are so harmful to our planet &amp; animals.</p>
+					<p class="icon-title2">Environmentally Kind</p>
+					<div class="Fright width80 minus60Top mobile100">
+						<p class="font18 mobileFont14">AquaTru is extremely efficient so you don't get the water waste like with other RO systems. Also, you are not trucking water all over for delivery, nor are you using up single-use water bottles that are so harmful to our planet &amp; animals.</p>
 					</div>
 					<div class="clear"></div>
 				  </div>
 				  <div class="reason-div marbot30">
 					<img src="images/icon_ease.png" alt="">
-					<div class="Fright width80">
-						<p class="siteBlue font22 marbot5">Ease</p>
-						<p class="font18">No heavy bottles to carry around or filters to change every few months. AquaTru filters last between six months and two years depending on water usage and local water quality.</p>
+					<p class="icon-title2">Ease</p>
+					<div class="Fright width80 minus60Top mobile100">
+						<p class="font18 mobileFont14">No heavy bottles to carry around or filters to change every few months. AquaTru filters last between six months and two years depending on water usage and local water quality.</p>
 					</div>
 					<div class="clear"></div>
 				  </div>
 				  <div class="reason-div marbot30">
 					<img src="images/icon_osmosis_drop.png" alt="">
-					<div class="Fright width80">
-						<p class="siteBlue font22 marbot5">Reverse Osmosis Technology</p>
-						<p class="font18 marbot10">AquaTru's exclusive, patent pending Ultra Pure Reverse Osmosis Technology miniaturized the same reverse osmosis technology used by all the major bottled brands and puts it into a compact countertop water purifier.</p>
+					<p class="icon-title2">Reverse Osmosis Technology</p>
+					<div class="Fright width80 minus60Top mobile100">
+						<p class="font18 marbot10 mobileFont14">AquaTru's exclusive, patent pending Ultra Pure Reverse Osmosis Technology miniaturized the same reverse osmosis technology used by all the major bottled brands and puts it into a compact countertop water purifier.</p>
 					</div>
 					<div class="clear"></div>
 				  </div>
@@ -382,7 +421,7 @@
 			</div><!-- container -->
 		</div><!-- row -->
 		</div>
-		<div class="row padbot80">
+		<div class="row padbot80 mobileMarbot40">
 			<h2 class="siteBlue center font36 marbot20">WHAT OUR CUSTOMERS ARE SAYING</h2>
 			<div class="container flex-container">
 				<div class="flex1 center">
@@ -393,7 +432,7 @@
 					<img src="images/icon_testimonial-drop.png" alt="" class="blue-drop">
 					<p class="siteBlue">Otilio R.</p>
 				</div>
-				<div class="flex1 center">
+				<div class="flex1 center mobileHide">
 					<div class="blue-div bottomBlueDiv">
 						<img src="images/icon_quote.png" alt="" class="marbot20">
 						<p>We've had our AquaTru system for a little over a week now and I can truly say that it is fantastic! Pure, clean water, easy use, and no more trips to the Glacier water machines!</p>
@@ -401,7 +440,7 @@
 					<img src="images/icon_testimonial-drop.png" alt="" class="blue-drop">
 					<p class="siteBlue">Rick L.</p>
 				</div>
-				<div class="flex1 center">
+				<div class="flex1 center mobileHide">
 					<div class="blue-div bottomBlueDiv">
 						<img src="images/icon_quote.png" alt="" class="marbot20">
 						<p>I just wanted to say that I received my AquaTru two weeks ago. WOW! Amazing tasting water. I feel better!</p>
@@ -415,7 +454,7 @@
 		<div class="row">
 			<div class="container center">
 				<h2 class="siteBlue font36 marbot10">HOW IT WORKS</h2>
-				<p class="font18">AquaTru's Ultra Reverse Osmosis Technology is a<br> 4-Stage purification process:</p>
+				<p class="font18 mobileFont14">AquaTru's Ultra Reverse Osmosis Technology is a 4-Stage purification process:</p>
 				<script src="https://fast.wistia.com/embed/medias/m8j1ywwj68.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:5% 0 0 0;position:relative; max-width: 700px; margin: 30px auto; height: 300px;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_m8j1ywwj68 videoFoam=true" style="height:100%;position:relative;width:100%">&nbsp;</div></div></div>
 			</div><!-- container -->
 		</div><!-- row -->
@@ -424,10 +463,10 @@
 			<div class="row">
 				<div class="container">
 					<h2 class="siteBlue font36 marbot10 center">IT'S TIME TO JOIN THE WATER REVOLUTION</h2>
-					<p class="font18 center bold">Save Money. Drink Safely. Save the Environment. AquaTru</p>
+					<p class="font18 center bold mobileFont14">Save Money. Drink Safely. Save the Environment. AquaTru</p>
 					<div id="bottomOrder">
 						<p class="font22 bold marbot10">ORDER AQUATRU</p>
-						<p class="font22 marbot30">The best water you've ever tasted or your money back.</p>
+						<p class="font22 marbot30 mobileFont16">The best water you've ever tasted or your money back.</p>
 						<div class="CTA">ORDER NOW</div>
 					</div>
 				</div><!-- container -->
@@ -435,7 +474,7 @@
 		</div>
 		<footer>
 			<div class="container">
-				<img src="images/logo-footer.png" alt="">
+				<img src="images/logo-footer.png" alt="" id="logo-footer">
 				<div class="marg40">
 						<a href="https://www.facebook.com/aquatruwater/"><img src="images/icon_facebook.png" alt=""></a>
 						<a href="https://twitter.com/AquaTru"><img src="images/icon_twitter.png" alt="" class="marg015"></a>
