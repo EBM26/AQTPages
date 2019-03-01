@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+	<meta name="format-detection" content="telephone=no">
+	<link rel="icon" type="image/x-icon" href="images/aqt_icon.png" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+	<title>AquaTru | Home Page</title>
+	<!--<link rel="stylesheet" href="css/home-style.css">-->
+	<style>
+		/* general styling rules */
+		*{text-decoration: none; margin: 0; padding: 0; max-width: 100%;}
+		html,body{margin: 0; padding: 0; font-family: 'Roboto', sans-serif; color: #415066; font-size: 16px;}
+		img{border: none;}
+		li{list-style-type: none;}
+		div{display: block; margin: 0; padding: 0;}
+		u{text-decoration: underline;}
+		s{text-decoration: line-through;}
+		i, .italic{font-style: italic;}
+		b, .bold{font-weight: bold;}
+		a:link, a:visited, a:active{text-decoration: none; color: inherit;}
+		input:focus, select:focus, textarea:focus, button:focus{outline: none;}
+		.Fright, .constantFright{float: right;}
+		.Fleft, .constantFleft{float: left;}
+		.clear{clear: both;}
+		.flex-container{display: flex;}
+		.flex1{flex: 1;}
+		.container{width: 1100px; margin: auto;}
+		.row{padding: 0 40px;}
+		.align-left{text-align: left;}
+		.inline{display: inline;}
+		.inline-block{display: inline-block;}
+		.uppercase{text-transform: uppercase;}
+		.center{text-align: center;}
+		.relative{position: relative;}
+		.hidden{display: none;}
+		.padmobile{padding: 0 15px;}
+		.white{color: #fff;}
+		.font12{font-size: 12px;}
+		.font14{font-size: 14px;}
+		.font20{font-size: 20px;}
+		.font22{font-size: 22px;}
+		.font16{font-size: 16px;}
+		.font18{font-size: 18px;}
+		.font26{font-size: 26px;}
+		.font28{font-size: 28px;}
+		.font34{font-size: 34px;}
+		.martop10{margin-top: 10px !important;}
+		.martop20{margin-top: 20px;}
+		.martop100{margin-top: 100px;}
+		.marright5{margin-right: 5px;}
+		.marleft5{margin-left: 5px;}
+		.marbot5{margin-bottom: 5px;}
+		.marbot10{margin-bottom: 10px;}
+		.marbot20{margin-bottom: 20px;}
+		.marbot15{margin-bottom: 15px;}
+		.marbot25{margin-bottom: 25px;}
+		.marbot30{margin-bottom: 30px;}
+		.marbot40{margin-bottom: 40px;}
+		.marbot80{margin-bottom: 80px;}
+		.marg015{margin: 0 15px;}
+		.marg025{margin: 0 25px;}
+		.marg04Per{margin: 0 4%;}
+		.marg30{margin: 30px 0;}
+		.marg20{margin: 20px 0;}
+		.marg40{margin: 40px auto;}
+		.padtop5{padding-top: 5px;}
+		.padtop30{padding-top: 30px !important;}
+		.padbot80{padding-bottom: 80px;}
+		.padding500{padding: 50px 0;}
+		.padding700{padding: 70px 0;}
+		.padding50140{padding: 50px 0 140px;}
+		.siteBlue{color: #2A4494 !important;}
+		.siteGrey{color: #848D9C;}
+		hr{border: 0; border-top: 1px solid #2A4494; margin: 25px 0;}
+		.text-left{text-align: left !important;}
+		.text-right{text-align: right !important;}
+		.margAuto{margin: auto;}
+		.width60{width: 60%;}
+		.width80{width: 80%;}
+		.width90{width: 90% !important;}
+		.specialMarg1{margin-right: 20px;}
+		.specialMarg2{margin-left: 20px;}
+		.desktopHide{display: none;}
+		
+		/* header styling */
+		header{padding: 5px; background: #fff; width: 100%; top: 0;}
+		.rightHeader{float: right; padding-right: 20px; color: #2A4494;}
+		.nav-links{padding: 0; margin: 0; float: left; padding-top: 15px;}
+		.nav-links li{display: inline-block; font-size: 18px; margin-right: 15px; cursor:pointer;}
+		.nav-links li:hover{color: rgb(223, 227, 227);}
+		#headerCTA{background: #fff; color: #2A4494; float: right;}
+		#headerCTA:hover{background: #2A4494; color: #fff;}
+		.customer{margin-right: 10px; margin-bottom: 15px; text-align: right;}
+
+		h1{font-size: 40px; color: #2A4494; text-align: center; margin: 80px auto 40px;}
+		h2{font-size: 34px; margin: 70px auto 30px; font-weight: normal; text-align: center;}
+		#purchase-box{width: 100%; max-width: 770px; margin: 0px auto 100px; border: 1px solid #2A4494;}
+		.inner-padding{padding: 40px 20px}
+		.order-details{float: right; width: 78%; padding-top: 35px;}
+		.orderImg{float: left; max-width: 140px;}
+		.orderNumber{vertical-align: -5px;}
+		#shippingAddress{width: 275px; margin: 45px auto;}
+
+		.grey-back{background: #f8f9f9;}
+		.product-div{background: #fff; padding: 30px 15px 50px; border: 1px solid #2A4494; flex: 1;
+					 box-shadow: 0 0 14px 0 rgba(24,31,111,0.3); text-align: center;}
+		.midProduct{margin: 0 80px;}
+		#hideWrapper{display: none;}
+		#moreButton{background: #2A4494; color: #fff; font-size: 18px; text-align: center; width: 380px; margin: auto; 
+				    border-radius: 5px; padding: 20px 0; cursor: pointer; font-weight: bold; letter-spacing: 1.2px;}
+
+		footer{background: url("images/waves.png") no-repeat; background-size: cover; padding: 160px 0 60px; text-align: center; 
+			   margin-top: -70px; font-size: 14px; color: #fff;}
+
+		@media only screen and (max-width: 1099px) {
+			html,body{font-size: 14px;}
+			.container{width: auto;}
+			.row{padding: 0 10px;}
+			.flex-container, .desktopHide{display: block;}
+			.Fright, .Fleft{float: none;}
+			.mobileHide, .img-div{display: none;}
+			.customer{margin-bottom: 0;}
+			header{position: inherit; padding: 0;}
+			.grey-box{background: rgba(213,216,221,1); color: #2A4494; padding: 7px 0; margin-bottom: 3px;}
+			header img{width: 73px; height: 39px;}
+			/* mobile navbar css */
+			.mobile-menu{display: none; width: 100%; background: #fff; z-index: 9998; padding: 10px 0; position: absolute; top: 75px;
+						 left: 0; padding-left: 15px;}
+			.mobile-menu ul li{list-style: none; margin-bottom: 10px;}
+			.mobile-menu ul li:last-child{margin-bottom: 0px;}
+			.mobile-menu ul li a{display: block; text-align: left; text-decoration: none; color: #2A4494; font-size: 16px;}
+
+			.mobile-menu--open{opacity: 1; display: block;}
+			.mobile-nav-button{width: 30px; position: absolute; margin: 2rem; right: -20px; top: 12px; z-index: 9999; cursor: pointer;
+							   height: 30px;}
+			.mobile-nav-button .mobile-nav-button__line{width: 100%; height: 3px; background: #2A4494; position: relative; transition: .5s ease;}
+			.mobile-nav-button .mobile-nav-button__line:nth-of-type(2){margin: 0.4rem 0;}
+			.mobile-nav-button .mobile-nav-button__line--1{transform: rotate(45deg); top: 13px; position: absolute;}
+			.mobile-nav-button .mobile-nav-button__line--2{display: none;}
+			.mobile-nav-button .mobile-nav-button__line--3{transform: rotate(135deg); top: 13px; position: absolute;}
+			footer{padding: 90px 15px 30px; font-size: 12px;}
+			.mobile100{width: 100%;}
+			.mobileFont14{font-size: 14px;}
+			.mobileFont16{font-size: 16px;}
+			
+		}
+
+		@media only screen and (max-width: 736px) and (orientation: landscape) {
+		
+		}
+	</style>
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<header>
+			<div class="desktopHeader mobileHide">
+			<a href="homePage.html">
+				<img src="images/logo.png" alt="">
+			</a>
+			<div class="rightHeader">
+				<p class="customer">Customer Service: 800-220-6570</p>
+				<ul class="nav-links">
+					<li><a href="">Home</a></li>
+					<li><a href="">Videos</a></li>
+					<li><a href="">Reviews</a></li>
+					<li><a href="">FAQs</a></li>
+					<li><a href="">Customer Service</a></li>
+					<li><a href="">Manual</a></li>
+					<li><a href="">Store</a></li>
+				</ul>
+				<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+			</div>
+			<div class="desktopHide mobileHeader relative">
+				<div class="grey-box"><p class="customer">Customer Service: <a href="tel:1-800-220-6570">800-220-6570</a></p></div>
+				<img src="images/logo.png" alt="" id="mobileLogo">
+				<div class="mobile-nav">
+					<div class="mobile-nav-button">
+						<div class="mobile-nav-button__line"></div>
+						<div class="mobile-nav-button__line"></div>
+						<div class="mobile-nav-button__line"></div>
+
+					</div>
+					<nav class="mobile-menu">
+						<ul>
+						   <li><a href="">Home</a></li>
+						   <li><a href="">Videos</a></li>
+						   <li><a href="">Reviews</a></li>
+						   <li><a href="">FAQs</a></li>
+						   <li><a href="">Faq</a></li>
+						   <li><a href="">Customer Service</a></li>
+						   <li><a href="">Manual</a></li>               
+						   <li><a href="">Store</a></li>               
+						</ul>
+					</nav>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</header>
+		<div class="row">
+			<div class="container">
+				<div class="width60 margAuto">
+					<h1>Thank you for your purchase, Name!</h1>
+					<p class="font20 center">We are working on fulfilling your order now. We will let you know when it ships.</p>
+					<h2>Your Purchase Details</h2>
+				</div>
+					<div id="purchase-box">
+						<div class="inner-padding">
+							<p class="font28 center">Order #<span class="orderNumber">5555555</span></p>
+							<hr>
+							<div class="order-details">
+								<p class="Fleft font18">1 AquaTru System</p>
+								<p class="Fright font20">$449.00</p>
+							</div>
+							<img src="images/AQTpackage.jpg" alt="" class="orderImg">
+							<div class="clear"></div>
+							<hr>
+							<p class="font20"><span>Subtotal</span> <span class="constantFright">$449.00</span></p>
+							<div class="clear marbot20"></div>
+							<p class="font20"><span>Shipping &amp; Handling</span> <span class="constantFright">$19.95</span></p>
+							<div class="clear"></div>
+							<hr>
+							<p class="font20 bold">Total <span class="constantFright">$468.95<sup>*</sup></span></p>
+							<div class="clear marbot15"></div>
+							<p class="font12"><sup>*</sup>Applicable sales tax may apply, including Canadian residents.</p>
+						</div>
+						<hr>
+						<div id="shippingAddress">
+							<p class="bold font20 marbot30">Your order is being shipped to:</p>
+							<p class="font20 marbot5">Jon DeAscentis</p>
+							<p class="font20 marbot5">123 Main St. Apt. 3</p>
+							<p class="font20 marbot5">Sherman Oaks, CA 91403</p>
+						</div>
+					</div>
+				</div>
+			</div><!-- container -->
+		</div><!-- row -->
+		<div class="grey-back padding50140">
+			<div class="row">
+				<div class="container">
+					<p class="font34 siteBlue center marbot40">Recommended for You</p>
+					<div class="flex-container marbot40">
+						<div class="product-div">
+							<img src="images/alkaline_mineral_water2.jpg" alt="" style="width: 50px; height: 120px;">
+							<p class="font20 bold siteBlue martop20 marbot30">AquaTru<br> "Perfect Minerals"</p>
+							<p>Add AquaTru "Perfect Minerals" to the order for $15 FREE S&P</p>
+						</div>
+						<div class="product-div midProduct">
+							<img src="images/additioanlTanks.jpg" alt="" width="230">
+							<p class="font20 bold siteBlue martop20 marbot30">Additional purified<br> water tank</p>
+							<p>Add Additional purified water tank to the order for $50 + $6.95 S&P</p>
+						</div>
+						<div class="product-div">
+							<img src="images/COMBO2Y_Filters.jpg" alt="" width="170">
+							<p class="font20 bold siteBlue martop20 marbot30">Replacement Filters<br> Two-Year Combo Pack</p>
+							<p>Add Replacement Filters Two-Year Combo Pack to the order for $79.95, plus $9.95 S&P (Free pre-filter, save $20)</p>
+						</div>
+					</div>
+					<div id="hideWrapper">
+					<div class="flex-container marbot40">
+						<div class="product-div">
+							<img src="images/PRECARBON_filter.jpg" alt="" width="51">
+							<p class="font20 bold siteBlue martop20 marbot30">AquaTru<br> Pre/Carbon Filter</p>
+							<p>Add AquaTru Pre/Carbon Filter to the order for $19.95 plus $4.95 S&P</p>
+						</div>
+						<div class="product-div midProduct">
+							<img src="images/ReverseOsmosis_filter.jpg" alt="" width="51">
+							<p class="font20 bold siteBlue martop20 marbot30">AquaTru<br> Reverse Osmosis Filter</p>
+							<p>Add AquaTru Reverse Osmosis Filter to the order for $49.95 plus $4.95 S&P</p>
+						</div>
+						<div class="product-div">
+							<img src="images/COMBO1Y_Filters.jpg" alt="" width="122">
+							<p class="font20 bold siteBlue martop20 marbot30">Replacement Filters<br> One-Year Combo Pack</p>
+							<p>Add Replacement Filters One-Year Combo Pack to the order for $59.95 (Save $10.00), plus $9.95 S&P</p>
+						</div>
+					</div>
+					<div class="flex-container marbot40">
+						<div class="product-div">
+							<img src="images/VOC_filter.jpg" alt="" width="51">
+							<p class="font20 bold siteBlue martop20 marbot30">AquaTru<br> VOC Carbon Filter</p>
+							<p>Add AquaTru VOC Carbon Filter to the order for $29.95 plus $4.95 S&P</p>
+						</div>
+						<div class="product-div midProduct">
+							<img src="images/AquaTru_WARRANTY.jpg" alt="" width="90">
+							<p class="font20 bold siteBlue martop20 marbot30">AquaTru<br> 3-Year Extended Warranty</p>
+							<p>Add 3-Year Extended Warranty to the order for $49.95</p>
+						</div>
+						<div class="product-div">
+							<img src="images/ACAdapter.jpg" alt="" width="110">
+							<p class="font20 bold siteBlue martop20 marbot30">AquaTru<br> AC Adapter</p>
+							<p>Add AC Adapter to the order for $14.95 plus $4.95 S&P</p>
+						</div>
+					</div>
+					</div>
+					<div id="moreButton">MORE RECOMMENDATIONS</div>
+				</div><!-- container -->
+			</div><!-- row -->
+		</div>
+		<footer>
+			<div class="container">
+				<img src="images/logo-footer.png" alt="" id="logo-footer">
+				<div class="marg40">
+						<a href="https://www.facebook.com/aquatruwater/"><img src="images/icon_facebook.png" alt=""></a>
+						<a href="https://twitter.com/AquaTru"><img src="images/icon_twitter.png" alt="" class="marg015"></a>
+						<a href="https://www.youtube.com/channel/UCKcdZfrPnMcmBcsyJ_gtZtA"><img src="images/icon_youtube.png" alt=""></a>
+				</div>
+				<p>&copy;Copyright 2019 AquaTru, LLC - All Rights Reserved. </p>
+				<p class="martop10"><a href="/privacy/">Privacy Policy</a> | <a href="/terms-and-conditions/">Terms and Conditions</a> | <a href="/customer-service/">Customer Service</a> | <a target="_blank" href="/affiliate/">Affiliate Program</a> | <a href="/faqs/">FAQ</a>  | <a href="http://blog.aquatruwater.com/">Blog</a></p>
+				<p class="martop10"><a href="http://www.aquatruwater.nl/">Germany Distributor</a> |  <a href="http://www.aquatruwater.nl/">Belgium Distributor</a> |  <a href="http://www.aquatruwater.nl/">Turkey Distributor</a> |  <a href="http://www.aquatruwater.nl/">France Distributor</a> | <a href="http://www.aquatruhk.com/">Hong Kong Distributor</a> | <a href="http://www.aquatruwater.nl/">Netherlands Distributor</a> | <br><a href="https://www.shoptv.com.ph/aqua-tru-counter-top-reverse-osmosis-water-purifier.html">Philippines Distributor</a> | <a href="mailto:help@waterboxme.com" class="footer_links">Oman, United Arab Emirates and Lebanon Distributor</a>  | <a href="https://www.rightspinhealth.co.nz/">Australia and New Zealand</a></p>
+			</div>
+		</footer>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+	</html>

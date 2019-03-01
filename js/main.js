@@ -53,4 +53,22 @@ $(document).ready(function() {
 		return (this.tog = !this.tog) ? MenuOpen() : MenuClose();
 	});
 
+	// more recommendations button
+	$("#moreButton").click(function() {
+		function MoreInfo() {
+			$("#hideWrapper").slideDown("slow");
+			$("#moreButton").html("LESS RECOMMENDATIONS");
+		}
+
+		function LessInfo() {
+			$("#hideWrapper").slideUp("slow");
+			$("#moreButton").html("MORE RECOMMENDATIONS");
+		}
+
+		return (this.tog = !this.tog) ? MoreInfo() : LessInfo();
+	});
 });
+
+
+
+
