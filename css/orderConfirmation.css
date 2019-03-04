@@ -1,0 +1,144 @@
+		/* general styling rules */
+		*{text-decoration: none; margin: 0; padding: 0; max-width: 100%;}
+		html,body{margin: 0; padding: 0; font-family: 'Roboto', sans-serif; color: #415066; font-size: 16px;}
+		img{border: none;}
+		li{list-style-type: none;}
+		div{display: block; margin: 0; padding: 0;}
+		u{text-decoration: underline;}
+		s{text-decoration: line-through;}
+		i, .italic{font-style: italic;}
+		b, .bold{font-weight: bold;}
+		a:link, a:visited, a:active{text-decoration: none; color: inherit;}
+		input:focus, select:focus, textarea:focus, button:focus{outline: none;}
+		.Fright, .constantFright{float: right;}
+		.Fleft, .constantFleft{float: left;}
+		.clear{clear: both;}
+		.flex-container{display: flex;}
+		.flex1{flex: 1;}
+		.container{width: 1100px; margin: auto;}
+		.row{padding: 0 40px;}
+		.align-left{text-align: left;}
+		.inline{display: inline;}
+		.inline-block{display: inline-block;}
+		.uppercase{text-transform: uppercase;}
+		.center{text-align: center;}
+		.relative{position: relative;}
+		.hidden{display: none;}
+		.padmobile{padding: 0 15px;}
+		.white{color: #fff;}
+		.font12{font-size: 12px;}
+		.font14{font-size: 14px;}
+		.font20{font-size: 20px;}
+		.font22{font-size: 22px;}
+		.font16{font-size: 16px;}
+		.font18{font-size: 18px;}
+		.font26{font-size: 26px;}
+		.font28{font-size: 28px;}
+		.font34{font-size: 34px;}
+		.martop10{margin-top: 10px !important;}
+		.martop20{margin-top: 20px;}
+		.martop100{margin-top: 100px;}
+		.marright5{margin-right: 5px;}
+		.marleft5{margin-left: 5px;}
+		.marbot5{margin-bottom: 5px;}
+		.marbot10{margin-bottom: 10px;}
+		.marbot20{margin-bottom: 20px;}
+		.marbot15{margin-bottom: 15px;}
+		.marbot25{margin-bottom: 25px;}
+		.marbot30{margin-bottom: 30px;}
+		.marbot40{margin-bottom: 40px;}
+		.marbot80{margin-bottom: 80px;}
+		.marg015{margin: 0 15px;}
+		.marg025{margin: 0 25px;}
+		.marg04Per{margin: 0 4%;}
+		.marg30{margin: 30px 0;}
+		.marg20{margin: 20px 0;}
+		.marg40{margin: 40px auto;}
+		.padtop5{padding-top: 5px;}
+		.padtop30{padding-top: 30px !important;}
+		.padbot80{padding-bottom: 80px;}
+		.padding500{padding: 50px 0;}
+		.padding700{padding: 70px 0;}
+		.padding50140{padding: 50px 0 140px;}
+		.siteBlue{color: #2A4494 !important;}
+		.siteGrey{color: #848D9C;}
+		hr{border: 0; border-top: 1px solid #2A4494; margin: 25px 0;}
+		.text-left{text-align: left !important;}
+		.text-right{text-align: right !important;}
+		.margAuto{margin: auto;}
+		.width60{width: 60%;}
+		.width80{width: 80%;}
+		.width90{width: 90% !important;}
+		.specialMarg1{margin-right: 20px;}
+		.specialMarg2{margin-left: 20px;}
+		.desktopHide{display: none;}
+		
+		/* header styling */
+		header{padding: 5px; background: #fff; width: 100%; top: 0;}
+		.rightHeader{float: right; padding-right: 20px; color: #2A4494;}
+		.nav-links{padding: 0; margin: 0; float: left; padding-top: 15px;}
+		.nav-links li{display: inline-block; font-size: 18px; margin-right: 15px; cursor:pointer;}
+		.nav-links li:hover{color: rgb(223, 227, 227);}
+		#headerCTA{background: #fff; color: #2A4494; float: right;}
+		#headerCTA:hover{background: #2A4494; color: #fff;}
+		.customer{margin-right: 10px; margin-bottom: 15px; text-align: right;}
+
+		h1{font-size: 40px; color: #2A4494; text-align: center; margin: 80px auto 40px;}
+		h2{font-size: 34px; margin: 70px auto 30px; font-weight: normal; text-align: center;}
+		#purchase-box{width: 100%; max-width: 770px; margin: 0px auto 100px; border: 1px solid #2A4494;}
+		.inner-padding{padding: 40px 20px}
+		.order-details{float: right; width: 78%; padding-top: 35px;}
+		.orderImg{float: left; max-width: 140px;}
+		.orderNumber{vertical-align: -5px;}
+		#shippingAddress{width: 275px; margin: 45px auto;}
+
+		.grey-back{background: #f8f9f9;}
+		.product-div{background: #fff; padding: 30px 15px 50px; border: 1px solid #2A4494; flex: 1;
+					 box-shadow: 0 0 14px 0 rgba(24,31,111,0.3); text-align: center;}
+		.midProduct{margin: 0 80px;}
+		#hideWrapper{display: none;}
+		#moreButton{background: #2A4494; color: #fff; font-size: 18px; text-align: center; width: 380px; margin: auto; 
+				    border-radius: 5px; padding: 20px 0; cursor: pointer; font-weight: bold; letter-spacing: 1.2px;}
+
+		footer{background: url("../images/waves.png") no-repeat; background-size: cover; padding: 160px 0 60px; text-align: center; 
+			   margin-top: -70px; font-size: 14px; color: #fff;}
+
+		@media only screen and (max-width: 1099px) {
+			html,body{font-size: 14px;}
+			.container{width: auto;}
+			.row{padding: 0 10px;}
+			.flex-container, .desktopHide{display: block;}
+			.Fright, .Fleft{float: none;}
+			.mobileHide, .img-div{display: none;}
+			.customer{margin-bottom: 0;}
+			header{position: inherit; padding: 0;}
+			.grey-box{background: rgba(213,216,221,1); color: #2A4494; padding: 7px 0; margin-bottom: 3px;}
+			header img{width: 73px; height: 39px;}
+			/* mobile navbar css */
+			.mobile-menu{display: none; width: 100%; background: #fff; z-index: 9998; padding: 10px 0; position: absolute; top: 75px;
+						 left: 0; padding-left: 15px;}
+			.mobile-menu ul li{list-style: none; margin-bottom: 10px;}
+			.mobile-menu ul li:last-child{margin-bottom: 0px;}
+			.mobile-menu ul li a{display: block; text-align: left; text-decoration: none; color: #2A4494; font-size: 16px;}
+
+			.mobile-menu--open{opacity: 1; display: block;}
+			.mobile-nav-button{width: 30px; position: absolute; margin: 2rem; right: -20px; top: 12px; z-index: 9999; cursor: pointer;
+							   height: 30px;}
+			.mobile-nav-button .mobile-nav-button__line{width: 100%; height: 3px; background: #2A4494; position: relative; transition: .5s ease;}
+			.mobile-nav-button .mobile-nav-button__line:nth-of-type(2){margin: 0.4rem 0;}
+			.mobile-nav-button .mobile-nav-button__line--1{transform: rotate(45deg); top: 13px; position: absolute;}
+			.mobile-nav-button .mobile-nav-button__line--2{display: none;}
+			.mobile-nav-button .mobile-nav-button__line--3{transform: rotate(135deg); top: 13px; position: absolute;}
+			footer{padding: 90px 15px 30px; font-size: 12px;}
+			.mobile100{width: 100%;}
+			.mobileFont14{font-size: 14px;}
+			.mobileFont16{font-size: 16px;}
+			.midProduct{margin: 40px 0px;}
+			.width60{width: 100%;}
+			
+		}
+
+		@media only screen and (max-width: 736px) {
+			h1{font-size: 34px; margin: 40px 0;}
+			h2{font-size: 28px; margin: 30px 0;}
+		}

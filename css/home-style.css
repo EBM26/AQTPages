@@ -126,6 +126,20 @@
 				 padding-top: 15%;}
 		#close-overlay{right: -15px; top: -15px; z-index: 100; cursor: pointer; padding: 2px 8px; position:absolute; color: #fff;
 					 font-weight: 100; font-size: 20px; background: #000; border: 3px solid #fff; border-radius: 50%;}
+
+		/*  influencer popup css  */
+		#influencer-div{position: absolute; right: 0; top: 10%; background: #fff; padding: 40px 20px; border-radius: 30px 30px 0 30px; box-shadow: 0 0 20px 0 rgba(24,31,111,0.5);
+						width: 700px;}
+		#DocZimg{float: left; width: 200px;}
+		#DocZdiv{float: right; width: 450px;}
+		#getDRZ{font-size: 30px; font-weight: bold; color: #2A4494; margin-bottom: 20px;}
+		.check{display: inline-block; transform: rotate(40deg); height: 13px; width: 6px; border-bottom: 5px solid #2A4494; 
+				border-right: 5px solid #2A4494; margin-right: 15px;}
+		#influencer-div .CTA{width: 100%;}
+		#exx{position: absolute; left: -20px; top: -20px; width: 42px; height: 42px; background: #2A4494; border-radius: 30px;}
+		#exx:before, #exx:after{position: absolute; left: 17px; content: ' '; height: 26px; width: 7px; background-color: #fff; border-radius: 2px; top: 7px;}
+		#exx:before{transform: rotate(45deg);}
+		#exx:after{transform: rotate(-45deg);}
 		
 		footer{background: #191f6b; padding: 120px 0 60px; text-align: center; font-size: 14px; color: #fff;}
 
@@ -184,6 +198,10 @@
 			#bottomOrder{padding-top: 20%;}
 			#logo-footer{width: 150px;}
 			.mobileMartop5{margin-top: 5px;}
+			#influencer-div{text-align: center; padding: 15px; width: 85%; margin: auto; right: 5px; top: -200px;}
+			#DocZimg{float: none; width: 140px;}
+			#DocZdiv{float: none; width: auto;}
+			#getDRZ{font-size: 26px; font-weight: bold; color: #2A4494; margin: 10px auto 20px;}
 		}
 
 		@media only screen and (max-width: 736px) and (orientation: landscape) {
