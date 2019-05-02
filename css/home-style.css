@@ -1,6 +1,6 @@
  		/* general styling rules */
 		*{text-decoration: none; margin: 0; padding: 0; max-width: 100%;}
-		html,body{margin: 0; padding: 0; font-family: 'Roboto', sans-serif; color: #415066; font-size: 16px;}
+		html,body{margin: 0; padding: 0; font-family: 'Montserrat', sans-serif; color: #415066; font-size: 16px;}
 		img{border: none;}
 		li{list-style-type: none;}
 		div{display: block; margin: 0; padding: 0;}
@@ -17,7 +17,7 @@
 		.flex1{flex: 1;}
 		.container{width: 1100px; margin: auto;}
 		.row{padding: 0 40px;}
-		.align-left{text-align: left;}
+		.align-left{text-align: left !important;}
 		.inline{display: inline;}
 		.inline-block{display: inline-block;}
 		.uppercase{text-transform: uppercase;}
@@ -67,6 +67,7 @@
 		.width90{width: 90% !important;}
 		.specialMarg1{margin-right: 20px;}
 		.specialMarg2{margin-left: 20px;}
+		.pointer{cursor: pointer;}
 		
 		/* header styling */
 		header{position: fixed; padding: 5px; z-index: 99; background: #fff; width: 100%; top: 0;}
@@ -74,26 +75,33 @@
 		.nav-links{padding: 0; margin: 0; float: left; padding-top: 15px;}
 		.nav-links li{display: inline-block; font-size: 18px; margin-right: 15px; cursor:pointer;}
 		.nav-links li:hover{color: rgb(223, 227, 227);}
-		#headerCTA{background: #fff; color: #2A4494; float: right;}
-		#headerCTA:hover{background: #2A4494; color: #fff;}
+		#headerCTA{float: right;}
 		.customer{margin-right: 10px; margin-bottom: 15px; text-align: right;}
 
-		#hero-image{background: url(../images/heroHome.jpg) no-repeat; background-size: cover; width: 100%; height: 55vh;
+		#hero-image{background: url(../images/ErinHomeHero.png) no-repeat; background-size: cover; width: 100%; height: 55vh;
 					margin-top: 110px; padding-top: 7%; background-position: center;}
 		.CTA{border-radius: 30px; width: 182px; height: 52px; background: #2A4494; color: #fff; text-align: center;
 			 border: 1px solid #2A4494; font-size: 20px; line-height: 24px; font-weight: 700; box-sizing: border-box;
 			 padding-top: 13px; cursor: pointer; transition: all 0.5s ease;}
-		.CTA:hover{box-shadow: -webkit-box-shadow: 0px 0px 4px 2px rgba(51,51,51,.7);
-			-moz-box-shadow: 0px 0px 4px 2px rgba(51,51,51,.7);
-			box-shadow: 0px 0px 4px 2px rgba(51,51,51,.7);}
-		h1{font-size: 28px; margin-bottom: 15px; letter-spacing: 1px; color: #2A4494;}
+		.CTA:hover, #heroCTA:hover{background: #fff; color: #2A4494;}
+		h1{font-size: 28px; margin-bottom: 15px; letter-spacing: 1px; color: #fff;}
 		.quote-div{color: #fff; margin-top: 7%; text-align: center; max-width: 450px;}
+		#heroCTA{border: 2px solid #fff; background: transparent;}
 
 		.grey-back{background: rgba(248,249,249,1);}
-		.icon-title{color: #2A4494; font-size: 20px; font-weight: bold; float: right; width: 85%; margin-bottom: 15px;}
-		.iconTop{width: 40px; height: 40px; padding-top: 5px;}
-		.iconTop3{width: 20px;}
+		.icon-title{color: #2A4494; font-size: 18px; font-weight: bold;}
+		.iconTop{margin-bottom: 10px;}
+		.iconTop3{width: 32px;}
 		.playIcon{vertical-align: middle; margin-right: 5px;}
+		.firstBoxes{box-shadow: 0 0 20px 0 rgba(0,0,0,0.5); border-radius: 10px; padding: 20px; text-align: center;} 
+		.thinBlueLine{border: 0; border-top: 1px solid #2A4494; margin: 20px auto;}
+		#topListBox{text-align: left; padding-left: 20px; margin-bottom: 20px;}
+		#topListBox li{list-style: disc; margin-bottom: 8px;}
+		#frame{margin: 5% auto;width: 80%;height: 700px;display: block;}
+
+		#blueVidBack{background: url(../images/videoBlueBack.png) no-repeat; background-size: cover; width: 100%; height: 55vh;
+					 background-position: center; text-align: center; padding-top: 15%;}
+		#blueVidBack p{color: #fff; font-size: 36px; font-weight: bold; margin-bottom: 30px;}
 
 		.blue-div, .img-div{background: #2A4494; color: #fff; border-radius: 30px; font-size: 18px; text-align: left;
 		 		  padding: 30px; display: inline-block; max-width: 530px; position: relative; z-index: 98;
@@ -127,19 +135,6 @@
 		#close-overlay{right: -15px; top: -15px; z-index: 100; cursor: pointer; padding: 2px 8px; position:absolute; color: #fff;
 					 font-weight: 100; font-size: 20px; background: #000; border: 3px solid #fff; border-radius: 50%;}
 
-		/*  influencer popup css  */
-		#influencer-div{position: absolute; right: 0; top: 10%; background: #fff; padding: 40px 20px; border-radius: 30px 30px 0 30px; box-shadow: 0 0 20px 0 rgba(24,31,111,0.5);
-						width: 700px;}
-		#DocZimg{float: left; width: 200px;}
-		#DocZdiv{float: right; width: 450px;}
-		#getDRZ{font-size: 30px; font-weight: bold; color: #2A4494; margin-bottom: 20px;}
-		.check{display: inline-block; transform: rotate(40deg); height: 13px; width: 6px; border-bottom: 5px solid #2A4494; 
-				border-right: 5px solid #2A4494; margin-right: 15px;}
-		#influencer-div .CTA{width: 100%;}
-		#exx{position: absolute; left: -20px; top: -20px; width: 42px; height: 42px; background: #2A4494; border-radius: 30px;}
-		#exx:before, #exx:after{position: absolute; left: 17px; content: ' '; height: 26px; width: 7px; background-color: #fff; border-radius: 2px; top: 7px;}
-		#exx:before{transform: rotate(45deg);}
-		#exx:after{transform: rotate(-45deg);}
 		
 		footer{background: #191f6b; padding: 120px 0 60px; text-align: center; font-size: 14px; color: #fff;}
 
