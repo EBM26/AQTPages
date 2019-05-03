@@ -21,6 +21,11 @@ $(document).ready(function() {
 		$("#overlay-content").html('<iframe src="https://docs.google.com/gview?url=https://www.aquatruwater.com/images/AQ_BROCHURE_PerfDATA_MAIN_2.19_R3.pdf&embedded=true" frameborder="0" id="frame"></iframe>')
 	});
 
+	$(".info").click(function(){
+		$("#overlay").fadeIn();
+		$("#overlay-content").html('<div class="infoOpen"><p class="font24 marbot20 bold">Cost per Pint Calculation</p><p>Based on a single ½ liter of Aquafina Water at CVS on 4/16/19 versus the cost of ½ liter of water purified from AquaTru at $449 cost + average filter maintenance over 3-year period.</p></div>')
+	});
+
 	// close overlay
 	$("#close-overlay").click(function(){
 		$("#overlay").fadeOut();

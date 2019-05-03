@@ -30,6 +30,7 @@
 		.font14{font-size: 14px;}
 		.font20{font-size: 20px;}
 		.font22{font-size: 22px;}
+		.font24{font-size: 24px;}
 		.font16{font-size: 16px;}
 		.font18{font-size: 18px;}
 		.font26{font-size: 26px;}
@@ -74,6 +75,8 @@
 		.specialMarg1{margin-right: 20px;}
 		.specialMarg2{margin-left: 20px;}
 		.pointer{cursor: pointer;}
+		.lightGreyBack{background-color: #FBFCFC;}
+		.desktopIpadHide{display: none;}
 		
 		/* header styling */
 		header{position: fixed; padding: 5px; z-index: 99; background: #fff; width: 100%; top: 0;}
@@ -126,6 +129,15 @@
 		.smallHr{width: 70px; border: 0; border-top: 2px solid #2A4494;}
 		.blueQuote{position: absolute; top: -15px; right: 10px; width: 35px;}
 		.stars{width: 180px; position: absolute; bottom: 15px; right: 40px;}
+
+		.compareDiv{padding: 30px; border: 1px solid #181F6F; position: relative;}
+		.BigNum{font-size: 48px; font-weight: bold; color: #2A4494;}
+		.compareDivLeft{border-top-left-radius:  10px; border-bottom-left-radius: 10px; position: relative;}
+		.compareDivRight{border-top-right-radius:  10px; border-bottom-right-radius: 10px; border-left: 0;}
+		.bigDrop{position: absolute; width: 70px; right: -36px; top: 100px;}
+		.info{border: 1px solid #2A4494; border-radius: 50%; position: absolute; padding: 5px 11px 2px; text-align: center; right: 30%; top: 5%;
+			  font-weight: bold; cursor: pointer;}
+		.infoOpen{background: #fff; width: 65%; padding: 20px; box-shadow: 0 0 12px rgba(0, 0, 0, 0.3), 0 1px 5px rgba(0, 0, 0, 0.2); position: absolute; color: #2A4494;  font-size: 18px; left: 0; right: 0; margin: auto; top: 2vh;}
 
 		#looserImage{background: url(../images/bottomImage.jpg) no-repeat; background-size: cover; width: 100%; height: 55vh;
 					padding-top: 5%; background-position: center;}
@@ -181,9 +193,9 @@
 			#hero-image{margin-top: 0; background: url(../images/erin_hero_gradient_mobile.jpg) no-repeat center; background-size: cover;
 						padding: 0;}
 			.welcome-div h1{color: #fff; font-size: 18px;}
-			.welcome-div{text-align: center; margin: auto; padding-top: 25vh;}
-			.welcome-div .CTA, .minus60Top, .specialMarg2{margin: auto;}
-			#overlay{padding-top: 50%;}
+			.welcome-div{margin: auto; padding-top: 25vh;}
+			.minus60Top, .specialMarg2{margin: auto;}
+			#overlay{padding-top: 15%;}
 			.white-back{background: #fff;}
 			.erin-quote-div{width: 80%; color: #2A4494; text-align: center; margin: 40px auto;}
 			.padding500{padding: 30px 0;}
@@ -200,7 +212,7 @@
 			.mobileFont16{font-size: 16px;}
 			.mobileMarbot40{margin-bottom: 40px;}
 			.wistia_responsive_padding{height: 150px !important;}
-			#looserImage{background: rgba(240,240,242,1); padding: 20% 0; height: auto;}
+			#looserImage{padding: 20% 0; height: auto;}
 			#looserImage h2{font-size: 26px;}
 			#bottomOrder{padding-top: 20%;}
 			#logo-footer{width: 150px;}
@@ -209,12 +221,25 @@
 			#DocZimg{float: none; width: 140px;}
 			#DocZdiv{float: none; width: auto;}
 			#getDRZ{font-size: 26px; font-weight: bold; color: #2A4494; margin: 10px auto 20px;}
+			.test-div{max-width: 220px; margin: auto;}
+			#img-div1, #img-div2, #img-div3{height: 35vh;}
+			.max90{max-width: 100%;}
+		}
+
+		@media only screen and (max-width: 736px) {
+			#overlay{padding-top: 15%;}
+			#hero-image{height: 86vh}
+			.icon-title, .icon-title2{width: 90%;}
+			.wistia_responsive_padding{height: 300px !important;}
+			#looserImage{padding: 10% 0 40%;}
+			.desktopIpadHide{display: block;}
+			.onlyMobileHide{display: none;}
+			.onlyMobileFont26{font-size: 26px !important;}
 		}
 
 		@media only screen and (max-width: 736px) and (orientation: landscape) {
 			#overlay{padding-top: 2%;}
-			#hero-image{height: 70vh; padding: 10% 0;}
 			.icon-title, .icon-title2{width: 90%;}
 			.wistia_responsive_padding{height: 300px !important;}
-			#looserImage{padding: 10% 0;}
+			#hero-image{height: 90vh;padding: 20% 0;}
 		}
