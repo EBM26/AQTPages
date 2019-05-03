@@ -46,6 +46,7 @@
 		.marbot15{margin-bottom: 15px;}
 		.marbot25{margin-bottom: 25px;}
 		.marbot30{margin-bottom: 30px;}
+		.marbot50{margin-bottom: 50px;}
 		.marbot80{margin-bottom: 80px;}
 		.marg015{margin: 0 15px;}
 		.marg025{margin: 0 25px;}
@@ -55,6 +56,8 @@
 		.marg40{margin: 40px auto;}
 		.padtop5{padding-top: 5px;}
 		.padtop30{padding-top: 30px !important;}
+		.padtop50{padding-top: 50px !important;}
+		.padbot50{padding-bottom: 50px;}
 		.padbot80{padding-bottom: 80px;}
 		.padding500{padding: 50px 0;}
 		.padding700{padding: 70px 0;}
@@ -97,23 +100,23 @@
 		.thinBlueLine{border: 0; border-top: 1px solid #2A4494; margin: 20px auto;}
 		#topListBox{text-align: left; padding-left: 20px; margin-bottom: 20px;}
 		#topListBox li{list-style: disc; margin-bottom: 8px;}
-		#frame{margin: 5% auto;width: 80%;height: 700px;display: block;}
+		#frame{margin: 5% auto;width: 80%;height: 700px; display: block;}
 
 		#blueVidBack{background: url(../images/videoBlueBack.png) no-repeat; background-size: cover; width: 100%; height: 55vh;
 					 background-position: center; text-align: center; padding-top: 15%;}
 		#blueVidBack p{color: #fff; font-size: 36px; font-weight: bold; margin-bottom: 30px;}
 
-		.blue-div, .img-div{background: #2A4494; color: #fff; border-radius: 30px; font-size: 18px; text-align: left;
-		 		  padding: 30px; display: inline-block; max-width: 530px; position: relative; z-index: 98;
-		 		  box-shadow: -webkit-box-shadow: 0px 0px 11px 1px rgba(204,204,204,1);
-					-moz-box-shadow: 0px 0px 11px 1px rgba(204,204,204,1);
-					box-shadow: 0px 0px 11px 1px rgba(204,204,204,1);}
-		#blue-div1{margin-left: -36px; vertical-align: -90px;}
-		.img-div{background: #fff;}
-		.blue-title{max-width: 370px; line-height: 1.5; font-size: 26px; margin-bottom: 30px;}
-		.img-div2{text-align: right; width: 450px; margin-left: -85px; z-index: 1; vertical-align: 20px;}
-		#img-div3{margin: 0; width: 430px;}
-		#blue-div3{margin-left: -64px; vertical-align: -60px;}
+		.blue-div{background: #2A4494; color: #fff; font-size: 18px; text-align: left;}
+		#img-div1{background: url(../images/DoYouKnow.png) no-repeat; background-size: cover; width: 100%; background-position: center;}
+		.blue-title{line-height: 1.5; font-size: 26px; margin-bottom: 30px; font-weight: bold;}
+		#img-div2{background: url(../images/womanFridge.png) no-repeat; background-size: cover; width: 100%; background-position: center;}
+		#img-div3{background: url(../images/ManyBottles.png) no-repeat; background-size: cover; width: 100%; background-position: center;}
+		#nationalImg{max-width: 200px; margin-top: 15px;}
+		.blue-container{max-width: 600px; margin: auto; padding: 50px 30px;}
+		#whiteBlue{background: #fff; color: #2A4494}
+		.iconDiff{width: 60px;}
+		.iconDiff2{width: 80px;}
+		.max90{max-width: 90%;}
 
 		.blue-drop{width: 25px; margin: 10px auto 15px; display: block;}
 		.bottomBlueDiv{font-size: 16px; max-width: 290px; height: 140px; margin-right: 10px;}
