@@ -39,6 +39,7 @@
 		.martop20{margin-top: 20px;}
 		.martop100{margin-top: 100px;}
 		.marright5{margin-right: 5px;}
+		.marright20{margin-right: 20px;}
 		.marleft5{margin-left: 5px;}
 		.marbot5{margin-bottom: 5px;}
 		.marbot10{margin-bottom: 10px;}
@@ -52,11 +53,13 @@
 		.marg025{margin: 0 25px;}
 		.marg04Per{margin: 0 4%;}
 		.marg30{margin: 30px 0;}
+		.marg10{margin: 10px 0;}
 		.marg20{margin: 20px 0;}
 		.marg40{margin: 40px auto;}
 		.padtop5{padding-top: 5px;}
 		.padtop30{padding-top: 30px !important;}
 		.padtop50{padding-top: 50px !important;}
+		.padbot30{padding-bottom: 30px;}
 		.padbot50{padding-bottom: 50px;}
 		.padbot80{padding-bottom: 80px;}
 		.padding500{padding: 50px 0;}
@@ -81,7 +84,7 @@
 		#headerCTA{float: right;}
 		.customer{margin-right: 10px; margin-bottom: 15px; text-align: right;}
 
-		#hero-image{background: url(../images/ErinHomeHero.png) no-repeat; background-size: cover; width: 100%; height: 55vh;
+		#hero-image{background: url(../images/ErinHomeHero.png) no-repeat; background-size: cover; width: 100%; height: 80vh;
 					margin-top: 110px; padding-top: 7%; background-position: center;}
 		.CTA{border-radius: 30px; width: 182px; height: 52px; background: #2A4494; color: #fff; text-align: center;
 			 border: 1px solid #2A4494; font-size: 20px; line-height: 24px; font-weight: 700; box-sizing: border-box;
@@ -118,8 +121,11 @@
 		.iconDiff2{width: 80px;}
 		.max90{max-width: 90%;}
 
-		.blue-drop{width: 25px; margin: 10px auto 15px; display: block;}
-		.bottomBlueDiv{font-size: 16px; max-width: 290px; height: 140px; margin-right: 10px;}
+		.test-div{box-shadow: 0 0 20px 0 rgba(24,31,111,0.5); border-radius: 10px; position: relative !important;
+				  padding: 20px 15px; text-align: left;}
+		.smallHr{width: 70px; border: 0; border-top: 2px solid #2A4494;}
+		.blueQuote{position: absolute; top: -15px; right: 10px; width: 35px;}
+		.stars{width: 180px; position: absolute; bottom: 15px; right: 40px;}
 
 		#looserImage{background: url(../images/bottomImage.jpg) no-repeat; background-size: cover; width: 100%; height: 55vh;
 					padding-top: 5%; background-position: center;}
@@ -129,6 +135,9 @@
 		.desktopHide{display: none;}
 		.icon-title2{color: #2A4494; margin-bottom: 5px; font-size: 22px; width: 80%; float: right;}
 		.minus60Top{margin-top: -60px;}
+		.LastVid{background: url(../images/heroVidHome.jpg) no-repeat; background-size: cover; width: 100%; height: 55vh;
+					 background-position: center; text-align: center; padding-top: 15%;}
+		.LastVid p{color: #fff; font-size: 36px; font-weight: bold; margin-bottom: 30px;}
 
 		/*   video popup css   */
 		#overlay{width: 100%; height: 100%; position: fixed; top: 0; left: 0; right: 0; bottom: 0;
